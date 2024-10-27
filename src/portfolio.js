@@ -1,20 +1,14 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
-
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 500 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
-
 const illustration = {
   animated: true // Set to false to use static SVG
 };
@@ -23,10 +17,9 @@ const greeting = {
   username: "Eshwar Chandra Vidhyasagar Thedla",
   title: "Hi all, I'm Eshwar",
   subTitle: emoji(
-    "Hello! I’m Eshwar, a Software Developer II at United Wholesale Mortgage, where I specialize in building scalable microservices and enhancing user experience. With expertise in C#, Kafka, Azure CosmosDB, and Redis, I create high-performance solutions that streamline data flows and improve reliability."
+    "a Software Developer II at United Wholesale Mortgage, where I specialize in building scalable microservices and enhancing user experiences for high-traffic applications. I bring expertise in both backend technologies (C#, Java, Kafka, Azure CosmosDB, Redis) and front-end (React, Angular, JSP), crafting solutions that balance performance, reliability, and user engagement"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1KoSpTt4_62aTJN3Mm1q2bzAqTD2gz8eP/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "https://drive.google.com/file/d/1KoSpTt4_62aTJN3Mm1q2bzAqTD2gz8eP/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -49,8 +42,8 @@ const skillsSection = {
   subTitle: "FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Build the backend for web and applications")
+    emoji("⚡ Build the microservices for a backend web and applications"),
+    emoji("⚡ Progressive Web Applications in normal and SPA Stacks")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -59,11 +52,11 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "java",
-      fontAwesomeClassname: "fa-brands fa-java"
+      fontAwesomeClassname: "fab fa-java"
     },
     {
       skillName: "wordpress",
-      fontAwesomeClassname: "fa-brands fa-wordpress"
+      fontAwesomeClassname: "fab fa-wordpress"
     },
     {
       skillName: "html-5",
@@ -84,10 +77,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
     },
     {
       skillName: "sql-database",
@@ -124,7 +113,7 @@ const educationInfo = {
       logo: require("./assets/images/osmaniaLogo.jpeg"),
       subHeader: "Bachelor of Engineering in Computer Science",
       duration: "August 2015 - May 2019",
-      desc: "Relevant Coursework: Data Structures; Object Oriented Programming; Databases Management Systems; Operating Systems; Data Communication; Design and Analysis of Algorithms; Computer Architecture; Software Engineering; Web Programming and Services; Compiler Construction; Data Mining; Artificial Intelligence; Computer Networks; Distributed System; Image Processing; Cloud ComputingRelevant Coursework: Data Structures; Object Oriented Programming; Databases Management Systems; Operating Systems; Data Communication; Design and Analysis of Algorithms; Computer Architecture; Software Engineering; Web Programming and Services; Compiler Construction; Data Mining; Artificial Intelligence; Computer Networks; Distributed System; Image Processing; Cloud Computing",
+      desc: "Relevant Coursework: Data Structures; Object Oriented Programming; Databases Management Systems; Operating Systems; Data Communication; Design and Analysis of Algorithms; Computer Architecture; Software Engineering; Web Programming and Services; Compiler Construction; Data Mining; Artificial Intelligence; Computer Networks; Distributed System; Image Processing; Cloud Computing",
       descBullets: ["Activities and societies: CSI student chapter"]
     }
   ]
@@ -161,23 +150,23 @@ const workExperiences = {
       company: "United Wholesale Mortgage",
       companylogo: require("./assets/images/uwmLogo.png"),
       date: "February 2024 – Present",
-      desc: "Developed scalable C# microservices for high-volume applications, including a PDF generation service with Aspose, CosmosDB, and Redis (Cache-Aside pattern), supporting 1K daily requests and improving document accuracy in line with MISMO standards. Designed Kafka-integrated microservices handling 1.2M peak requests, ensuring seamless API compatibility and automated email workflows. Enhanced security by integrating ADFS for secure document routing and MSAL for token management, optimizing data integrity and client access. Streamlined credit inquiry processes with Kafka queues, achieving 100% data integrity and reducing costs by 20%. Led test automation using xUnit, Stryker.Net, and Testcontainers, ensuring code reliability and efficient validation."
+      desc: "Built high-volume C# microservices, including PDF generation with CosmosDB and Redis, supporting 1K daily requests, and designed Kafka-integrated services handling 1.2M peak requests with seamless API compatibility. Strengthened security with ADFS and MSAL, optimized credit inquiries with Kafka queues (100% data integrity, 20% cost savings), and led automated testing using xUnit and Testcontainers for reliability.",
     },
     {
       role: "Software Dev Engineer",
       company: "Amazon",
       companylogo: require("./assets/images/amazonLogo.png"),
       date: "June 2022 – February 2024",
-      desc: "Enhanced the “Buy Now” checkout experience with JSP and Java, boosting conversion rates by 25% for millions globally. Ensured system uptime and reliability during peak traffic, including Prime Day, achieving 99% uptime while managing 112K sales per minute with 12% reduced latency. Led API migration for checkout and third-party integrations, cutting API-related issues by 30% and enhancing security across the EU with Multi-Factor Authentication, reducing unauthorized access by 80%. Improved reliability by expanding testing coverage by 30% with Transport Layer Security certification across platforms. Provided on-call support to resolve over 100 defects, streamlining the checkout process and reducing user clicks by 20%, significantly enhancing the user experience."
+      desc: "Enhanced the “Buy Now” checkout experience using JSP and Java, increasing conversion rates by 25% and supporting millions globally with 99% uptime during high-traffic events like Prime Day, managing 112K sales per minute and reducing latency by 12%. Led API migration and security upgrades, reducing API issues by 30% and unauthorized access by 80%, while expanding testing coverage by 30% and resolving 100+ defects to streamline checkout, cutting user clicks by 20%.",
     },
     {
       role: "Software Engineer",
       company: "Deloitte",
       companylogo: require("./assets/images/deloitteLogo.png"),
       date: "July 2019 – December 2020",
-      desc: "Automated data loading and tax workflows with Python and Alteryx, boosting SQL Server dashboard performance by 97%, cutting tax analysis time by 98.5%, and delivering strategic insights to global developers."
-    }
-  ]
+      desc: "Automated data loading and tax workflows with Python and Alteryx, boosting SQL Server dashboard performance by 97%, cutting tax analysis time by 98.5%, and delivering strategic insights to global developers.",
+    },
+  ],
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -278,6 +267,38 @@ const blogSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
+// Talks Sections
+
+const talkSection = {
+  title: "TALKS",
+  subtitle: emoji(
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+  ),
+
+  talks: [
+    {
+      title: "Build Actions For Google Assistant",
+      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      slides_url: "https://bit.ly/saadpasta-slides",
+      event_url: "https://www.facebook.com/events/2339906106275053/"
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Podcast Section
+
+const podcastSection = {
+  title: emoji("Podcast 🎙️"),
+  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+
+  // Please Provide with Your Podcast embeded Link
+  podcast: [
+    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
 // Resume Section
 const resumeSection = {
   title: "Resume",
@@ -289,10 +310,16 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+1-9195274186",
   email_address: "thedlaeshwar@gmail.com"
+};
+
+// Twitter Section
+
+const twitterDetails = {
+  userName: "twitter", //Replace "twitter" with your twitter username without @
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -310,7 +337,10 @@ export {
   bigProjects,
   achievementSection,
   blogSection,
+  talkSection,
+  podcastSection,
   contactInfo,
+  twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
 };
