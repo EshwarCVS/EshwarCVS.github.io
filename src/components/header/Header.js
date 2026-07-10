@@ -17,10 +17,17 @@ const NAV = [
 function Header() {
   const {mode, changeMode} = useContext(StyleContext);
   const shortName = (greeting.username || "Eshwar").split(" ")[0];
+  const isFun = mode === "fun";
 
   return (
     <Headroom>
-      <header className="dark-menu header portfolio-header">
+      <header
+        className={
+          isFun
+            ? "dark-menu header portfolio-header"
+            : "header portfolio-header formal-header"
+        }
+      >
         <a href="#hero" className="logo">
           <span className="grey-color">&lt;</span>
           <span className="logo-name">{shortName}</span>
@@ -28,9 +35,9 @@ function Header() {
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">
-          <span className="navicon navicon-dark" />
+          <span className={isFun ? "navicon navicon-dark" : "navicon"} />
         </label>
-        <ul className="dark-menu menu">
+        <ul className={isFun ? "dark-menu menu" : "menu"}>
           {NAV.map(item => (
             <li key={item.href}>
               <a href={item.href}>{item.label}</a>

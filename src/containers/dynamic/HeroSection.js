@@ -5,6 +5,7 @@ import Button from "../../components/button/Button";
 import {greeting, socialMediaLinks} from "../../portfolio";
 import {useSiteData} from "../../contexts/SiteDataContext";
 import StyleContext from "../../contexts/StyleContext";
+import walmartLogo from "../../assets/images/walmartLogo.svg";
 
 export default function HeroSection() {
   const {data} = useSiteData();
@@ -18,6 +19,7 @@ export default function HeroSection() {
   const tagline = profile.tagline || greeting.subTitle;
   const resumeLink = profile.resume || greeting.resumeLink;
   const isFun = mode === "fun";
+  const showWalmart = /walmart/i.test(company);
 
   return (
     <Fade bottom duration={900} distance="30px">
@@ -34,7 +36,15 @@ export default function HeroSection() {
               {company ? (
                 <>
                   {" "}
-                  <span className="hero-at">@</span> {company}
+                  <span className="hero-at">@</span>{" "}
+                  {showWalmart && (
+                    <img
+                      src={walmartLogo}
+                      alt=""
+                      className="hero-company-logo"
+                    />
+                  )}
+                  <span>{company}</span>
                 </>
               ) : null}
             </p>

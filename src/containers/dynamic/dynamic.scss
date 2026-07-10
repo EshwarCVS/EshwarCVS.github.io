@@ -76,6 +76,31 @@
   transition: opacity 0.3s ease;
 }
 
+.portfolio-app[data-mode="formal"] .hero-mesh {
+  opacity: 0.7;
+}
+
+.portfolio-app[data-mode="formal"] .hero-terminal-body {
+  color: var(--terminal);
+  background: #0f172a;
+}
+
+.portfolio-app[data-mode="formal"] .hero-terminal {
+  background: #0f172a;
+  border-color: rgba(15, 23, 42, 0.2);
+}
+
+.portfolio-app[data-mode="formal"] .hero-terminal-bar {
+  background: #1e293b;
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.portfolio-app[data-mode="formal"] .terminal-prompt {
+  color: #0f766e;
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+}
+
 .portfolio-app[data-mode="fun"] .hero-mesh {
   animation: mesh-drift 12s ease-in-out infinite alternate;
 }
@@ -112,10 +137,13 @@
   font-weight: 700;
   line-height: 1.05;
   margin: 0 0 0.75rem;
-  background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
+  background: none;
+  -webkit-text-fill-color: unset;
+}
+
+.portfolio-app[data-mode="formal"] .hero-name {
+  color: #151821;
 }
 
 .portfolio-app[data-mode="fun"] .hero-name {
@@ -129,6 +157,19 @@
   font-size: 1.15rem;
   color: var(--text-muted);
   margin: 0 0 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hero-company-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: cover;
+  vertical-align: middle;
+  box-shadow: 0 0 0 1px var(--border);
 }
 
 .hero-at {
@@ -167,7 +208,8 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--shadow);
+  transform: none;
 }
 
 .hero-terminal-bar {
@@ -206,8 +248,7 @@
 }
 
 .portfolio-app[data-mode="fun"] .hero-terminal {
-  transform: rotate(-0.6deg);
-  box-shadow: 0 24px 80px rgba(236, 72, 153, 0.18);
+  box-shadow: var(--shadow);
 }
 
 .portfolio-app[data-mode="fun"] .timeline-card:hover,
@@ -339,6 +380,8 @@
   border-radius: 8px;
   background: #fff;
   padding: 4px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
 }
 
 .timeline-initials {

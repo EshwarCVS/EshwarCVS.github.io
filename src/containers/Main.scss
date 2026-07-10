@@ -2,29 +2,29 @@
 
 .portfolio-app {
   min-height: 100vh;
+  background-color: var(--surface-1);
+  color: var(--text-primary);
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-.portfolio-app.dark-mode,
-.dark-mode.portfolio-app {
-  background-color: var(--surface-1, #0a0b10);
-  color: var(--text-primary, #f4f4f5);
-}
-
+/* Formal — light, recruiter-friendly */
 .portfolio-app[data-mode="formal"] {
   --accent: #3949ab;
-  --accent-soft: rgba(57, 73, 171, 0.15);
-  --accent-glow: rgba(99, 102, 241, 0.28);
-  --surface-1: #0a0b10;
-  --surface-2: #12141c;
-  --surface-3: #1c1f2b;
-  --text-primary: #f4f4f5;
-  --text-muted: #a1a1aa;
-  --border: rgba(255, 255, 255, 0.08);
-  --terminal: #86efac;
-  --mesh-secondary: rgba(99, 102, 241, 0.12);
+  --accent-soft: rgba(57, 73, 171, 0.12);
+  --accent-glow: rgba(57, 73, 171, 0.16);
+  --surface-1: #f7f8fc;
+  --surface-2: #ffffff;
+  --surface-3: #eef0f7;
+  --text-primary: #151821;
+  --text-muted: #5b6172;
+  --border: rgba(21, 24, 33, 0.1);
+  --terminal: #1b7f4e;
+  --mesh-secondary: rgba(99, 102, 241, 0.1);
+  --header-bg: rgba(247, 248, 252, 0.92);
+  --shadow: 0 16px 40px rgba(21, 24, 33, 0.08);
 }
 
+/* Fun — dark, expressive */
 .portfolio-app[data-mode="fun"] {
   --accent: #f97316;
   --accent-soft: rgba(249, 115, 22, 0.18);
@@ -37,6 +37,8 @@
   --border: rgba(255, 180, 120, 0.14);
   --terminal: #fde68a;
   --mesh-secondary: rgba(56, 189, 248, 0.18);
+  --header-bg: rgba(18, 11, 20, 0.92);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
 }
 
 .mode-toggle-item {

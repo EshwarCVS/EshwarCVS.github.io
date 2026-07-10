@@ -1,12 +1,15 @@
-@import "../../_globalColor";
-
 .footer-text {
   text-align: center;
-  color: $subTitle !important;
+  color: var(--text-muted) !important;
 }
 
-.dark-mode {
-  color: $textColorDark !important;
+.footer-text a {
+  color: var(--accent) !important;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
 }
 
 .footer-div {

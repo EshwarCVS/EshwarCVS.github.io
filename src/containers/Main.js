@@ -28,8 +28,8 @@ const Main = () => {
   const changeMode = next => setMode(next === "fun" ? "fun" : "formal");
 
   return (
-    <div className="dark-mode portfolio-app" data-mode={mode}>
-      <StyleProvider value={{isDark: true, mode, changeMode}}>
+    <div className={`portfolio-app mode-${mode}`} data-mode={mode}>
+      <StyleProvider value={{isDark: mode === "fun", mode, changeMode}}>
         <SiteDataProvider>
           {isShowingSplashAnimation && splashScreen.enabled ? (
             <SplashScreen />

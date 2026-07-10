@@ -21,10 +21,24 @@
 }
 
 .header {
-  background-color: $lightBackground1;
+  background-color: var(--header-bg, $lightBackground1);
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+}
+
+.formal-header {
+  background-color: var(--header-bg) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+.formal-header .logo-name,
+.formal-header li a {
+  color: var(--text-primary) !important;
+}
+
+.formal-header li a:hover {
+  background-color: var(--accent-soft) !important;
 }
 
 .header ul {

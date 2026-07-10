@@ -2,18 +2,21 @@ import React from "react";
 import {Fade} from "react-reveal";
 import {useSiteData} from "../../contexts/SiteDataContext";
 import SectionShell from "./SectionShell";
+import walmartLogo from "../../assets/images/walmartLogo.svg";
+import uwmLogo from "../../assets/images/uwmLogo.png";
+import amazonLogo from "../../assets/images/amazonLogo.png";
+import deloitteLogo from "../../assets/images/deloitteLogo.png";
+import ncsuLogo from "../../assets/images/ncsuLogo.jpeg";
 
 const COMPANY_LOGOS = {
-  "Walmart Global Tech": require("../../assets/images/walmartLogo.svg"),
-  "United Wholesale Mortgage": require("../../assets/images/uwmLogo.png"),
-  Amazon: require("../../assets/images/amazonLogo.png"),
-  "Deloitte India (Offices of the US)": require("../../assets/images/deloitteLogo.png"),
-  "Deloitte India": require("../../assets/images/deloitteLogo.png"),
-  Deloitte: require("../../assets/images/deloitteLogo.png"),
-  "NC State Department of Biological and Agricultural Engineering": require(
-    "../../assets/images/ncsuLogo.jpeg"
-  ),
-  "North Carolina State University": require("../../assets/images/ncsuLogo.jpeg")
+  "Walmart Global Tech": walmartLogo,
+  "United Wholesale Mortgage": uwmLogo,
+  Amazon: amazonLogo,
+  "Deloitte India (Offices of the US)": deloitteLogo,
+  "Deloitte India": deloitteLogo,
+  Deloitte: deloitteLogo,
+  "NC State Department of Biological and Agricultural Engineering": ncsuLogo,
+  "North Carolina State University": ncsuLogo
 };
 
 function companyInitials(company) {
