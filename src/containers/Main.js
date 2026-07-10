@@ -12,9 +12,8 @@ import {splashScreen} from "../portfolio";
 import "./Main.scss";
 
 const Main = () => {
-  const [isDark, setIsDark] = useLocalStorage("isDark", true);
-  const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
-    useState(true);
+  const [mode, setMode] = useLocalStorage("siteMode", "formal");
+  const [isShowingSplashAnimation, setIsShowingSplashAnimation] = useState(true);
 
   useEffect(() => {
     if (splashScreen.enabled) {
@@ -26,11 +25,11 @@ const Main = () => {
     }
   }, []);
 
-  const changeTheme = () => setIsDark(!isDark);
+  const changeMode = next => setMode(next === "fun" ? "fun" : "formal");
 
   return (
-    <div className={isDark ? "dark-mode portfolio-app" : "portfolio-app"}>
-      <StyleProvider value={{isDark, changeTheme}}>
+    <div className="dark-mode portfolio-app" data-mode={mode}>
+      <StyleProvider value={{isDark: true, mode, changeMode}}>
         <SiteDataProvider>
           {isShowingSplashAnimation && splashScreen.enabled ? (
             <SplashScreen />

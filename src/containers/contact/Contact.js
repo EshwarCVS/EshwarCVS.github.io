@@ -1,34 +1,28 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
+import {contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
-import email from "../../assets/lottie/email";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
-import StyleContext from "../../contexts/StyleContext";
+import {useSiteData} from "../../contexts/SiteDataContext";
 
 export default function Contact() {
-  const {isDark} = useContext(StyleContext);
+  const {data} = useSiteData();
+  const avatarUrl =
+    data?.profile?.avatar_url ||
+    "https://avatars.githubusercontent.com/u/28903840?v=4";
+  const name =
+    data?.profile?.full_name ||
+    data?.profile?.name ||
+    "Eshwar Chandra Vidhyasagar Thedla";
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
             <h1 className="heading contact-title">{contactInfo.title}</h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode contact-subtitle"
-                  : "subTitle contact-subtitle"
-              }
-            >
-              {contactInfo.subtitle}
-            </p>
-            <div
-              className={
-                isDark ? "dark-mode contact-text-div" : "contact-text-div"
-              }
-            >
+            <p className="dark-mode contact-subtitle">{contactInfo.subtitle}</p>
+            <div className="dark-mode contact-text-div">
               {contactInfo.number && (
                 <>
                   <a
@@ -53,14 +47,11 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={email} />
-            ) : (
-              <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
-            )}
+            <img
+              className="contact-avatar"
+              alt={name}
+              src={avatarUrl}
+            />
           </div>
         </div>
       </div>

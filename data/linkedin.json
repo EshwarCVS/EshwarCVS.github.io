@@ -1,6 +1,6 @@
 {
   "profile": {
-    "name": "Eshwar Chandra Vidhyasagar",
+    "name": "Eshwar Chandra Vidhyasagar Thedla",
     "intro_name": "Eshwar Thedla",
     "title": "Software Engineer III",
     "company": "Walmart Global Tech",
@@ -8,7 +8,11 @@
     "linkedin": "https://linkedin.com/in/eshwarchandravidhyasagar",
     "website": "https://eshwarcvs.github.io",
     "substack": "https://devdine.substack.com",
-    "github_username": "EshwarCVS"
+    "github_username": "EshwarCVS",
+    "full_name": "Eshwar Chandra Vidhyasagar Thedla",
+    "tagline": "Software Engineer III at Walmart Global Tech \u2014 building data pipelines, APIs, and high-throughput systems with Scala, Spark, and Kafka.",
+    "avatar_url": "https://avatars.githubusercontent.com/u/28903840?v=4",
+    "resume": "https://drive.google.com/file/d/1JcWoYKsWfb_m-L4qim3UCRLgsOb-KuhT/view?usp=sharing"
   },
   "readme_widgets": {
     "theme": "dark",
@@ -32,31 +36,105 @@
       "role": "Software Engineer III",
       "company": "Walmart Global Tech",
       "period": "May 2025 - Present",
-      "description": "Designing large-scale data pipelines with Scala and Apache Spark; implemented CDC for real-time data mutations. Built GraphQL APIs for social trends and content moderation; multi-tenancy support in Apache Airflow; high-throughput content ingestion pipelines. Executed 10+ production changes with zero incidents."
+      "employment_type": "Full-time",
+      "location": "Bentonville, Arkansas, United States \u00b7 On-site",
+      "description": "Designing large-scale data pipelines and platform APIs for brand safety, social trends, and content lifecycle at Walmart Global Tech.",
+      "highlights": [
+        "Data Pipeline Engineering & CDC: Designed and maintained large-scale data pipelines using Scala, Apache Spark, and Kafka; implemented a change data capture (CDC) framework for real-time detection and propagation of data mutations across distributed systems \u2014 contributing to a potential research publication",
+        "Brand Safety & Content Lifecycle: Integrated brand safety classification into production data pipelines to ensure content compliance at scale; implemented automated content expiry tracking and time-based retention policies to manage content freshness across the platform",
+        "Social Trends Platform & API Development: Redesigned the end-to-end social trends processing workflow; built RESTful API endpoints for product and content moderation (add, update, soft-delete) enabling cross-team CMS integration; delivered hashtag tracking, CRM endpoints, and trending product APIs powering personalized discovery experiences",
+        "Multi-Tenancy & Content Ingestion: Implemented multi-tenancy support in Apache Airflow for international expansion; built a high-throughput content ingestion pipeline with asynchronous processing, upload state synchronization, and job consolidation",
+        "Production Reliability: Successfully executed 10+ production change requests with zero major incidents; authored comprehensive deployment documentation and established CRQ best practices adopted across the engineering organization",
+        "Engineering Excellence: Introduced mutation testing practices using ScalaTest and ScalaMock; implemented production safeguards including OpenSearch snapshots; maintained thorough documentation for all data workflows",
+        "Developer Enablement & Leadership: Led onboarding sessions on deployment workflows and platform architecture; provided cross-functional support to partner teams and ensured engineering continuity during team absences",
+        "Hackathon: Built a Data Quality Agent during an internal hackathon, demonstrating initiative in automated data validation tooling"
+      ]
     },
     {
       "role": "Software Developer - 2",
       "company": "United Wholesale Mortgage",
       "period": "Feb 2024 - May 2025",
-      "description": "Developed C# microservices for PDF generation (Aspose, CosmosDB, Redis) supporting 1K daily requests. Built Kafka-integrated services handling 1.2M peak requests; integrated ADFS and MSAL for secure document routing. Led test automation with xUnit, Stryker.Net, and Testcontainers."
+      "employment_type": "Full-time",
+      "location": "Pontiac, Michigan, United States \u00b7 On-site",
+      "description": "Built scalable C# microservices for high-volume mortgage document and credit workflows.",
+      "highlights": [
+        "Developed scalable C# microservices for high-volume applications, including a PDF generation service with Aspose, CosmosDB, and Redis (Cache-Aside pattern), supporting 1K daily requests and improving document accuracy in line with MISMO standards",
+        "Designed Kafka-integrated microservices handling 1.2M peak requests, ensuring seamless API compatibility and automated email workflows",
+        "Enhanced security by integrating ADFS for secure document routing and MSAL for token management, optimizing data integrity and client access",
+        "Streamlined credit inquiry processes with Kafka queues, achieving 100% data integrity and reducing costs by 20%",
+        "Led test automation using xUnit, Stryker.Net, and Testcontainers, ensuring code reliability and efficient validation"
+      ]
     },
     {
       "role": "Software Development Engineer",
       "company": "Amazon",
-      "period": "Jun 2022 - Feb 2024",
-      "description": "Enhanced Buy Now checkout with JSP and Java, boosting conversion rates by 25%. Maintained 99% uptime during Prime Day (112K sales/min). Led API migration and EU MFA rollout, reducing unauthorized access by 80%. Resolved 100+ defects and reduced checkout clicks by 20%."
+      "period": "Jan 2023 - Feb 2024",
+      "employment_type": "Full-time",
+      "location": "Cupertino, California, United States \u00b7 Hybrid",
+      "description": "Enhanced Buy Now checkout for millions of customers with reliability and security upgrades.",
+      "highlights": [
+        "Enhanced the \u201cBuy Now\u201d checkout experience with JSP and Java, boosting conversion rates by 25% for millions globally",
+        "Ensured system uptime and reliability during peak traffic, including Prime Day, achieving 99% uptime while managing 112K sales per minute with 12% reduced latency",
+        "Led API migration for checkout and third-party integrations, cutting API-related issues by 30% and enhancing security across the EU with Multi-Factor Authentication, reducing unauthorized access by 80%",
+        "Improved reliability by expanding testing coverage by 30% with Transport Layer Security certification across platforms",
+        "Provided on-call support to resolve over 100 defects, streamlining the checkout process and reducing user clicks by 20%"
+      ]
+    },
+    {
+      "role": "Software Development Engineer",
+      "company": "Amazon",
+      "period": "Jun 2022 - Jan 2023",
+      "employment_type": "Full-time",
+      "location": "Seattle, Washington, United States \u00b7 Hybrid",
+      "description": "Software Development Engineer focused on Spring Framework and Java services.",
+      "highlights": [
+        "Built and maintained Java / Spring Framework services supporting Amazon checkout and related platforms"
+      ]
     },
     {
       "role": "Research Programmer",
-      "company": "NC State Dept. of Biological & Agricultural Engineering",
+      "company": "NC State Department of Biological and Agricultural Engineering",
       "period": "May 2021 - May 2022",
-      "description": "Engineered a Random Forest Regression model in Python for ShellCast, training daily with 350+ weather inputs and achieving 80% accuracy. Deployed a Flask-based web app for real-time harvest closure forecasts serving 20K+ shellfish growers."
+      "employment_type": "Part-time",
+      "location": "Raleigh, North Carolina, United States",
+      "description": "Built ShellCast ML forecasting for 20K+ shellfish growers.",
+      "highlights": [
+        "ML Model Development: Engineered a Random Forest Regression model in Python, training it daily with 350+ inputs from weather services for ShellCast, aiding 20K+ shellfish growers in making informed harvesting decisions",
+        "Optimized the forecasting model, achieving 80% accuracy, and deployed a Flask-based web app for real-time updates"
+      ]
+    },
+    {
+      "role": "Webmaster",
+      "company": "North Carolina State University",
+      "period": "May 2021 - May 2022",
+      "employment_type": "Part-time",
+      "location": "Raleigh, North Carolina, United States \u00b7 On-site",
+      "description": "Managed the Department of Chemical and Biomolecular Engineering website.",
+      "highlights": [
+        "Managed and updated the departmental website using WordPress, ensuring accuracy and usability for professors and students by regularly updating content and resolving web-related issues"
+      ]
     },
     {
       "role": "Software Engineer",
-      "company": "Deloitte India",
+      "company": "Deloitte India (Offices of the US)",
       "period": "Jul 2019 - Dec 2020",
-      "description": "Automated SQL Server data loading with Python, boosting dashboard performance by 97%. Led Quicksight dashboards for 58 countries, reducing manual tax analysis by 98.5%. Automated tax workflows with Alteryx and Python; received SPOT Award."
+      "employment_type": "Full-time",
+      "location": "Hyderabad, Telangana, India \u00b7 Hybrid",
+      "description": "Automated tax data workflows and dashboards for global developer teams.",
+      "highlights": [
+        "Data Handling Automation: Automated SQL Server data loading using Python, reducing manual record handling and boosting dashboard performance by 97%",
+        "Dashboard Development: Led the creation of Quicksight dashboards for 58 country developers, reducing manual tax analysis effort by 98.5%, and delivered user-friendly technology roadmaps",
+        "Workflow Automation: Automated tax calculation workflows with Alteryx and Python, reducing manpower by 80% and received SPOT Award for delivering strategic solutions"
+      ]
+    },
+    {
+      "role": "Intern",
+      "company": "BUILDtheworld",
+      "period": "Apr 2018 - Jul 2018",
+      "employment_type": "Internship",
+      "location": "Hyderabad Area, India",
+      "description": "Internship at BUILDtheworld.",
+      "highlights": []
     }
   ],
   "education": [
@@ -175,7 +253,7 @@
       "url": "https://github.com/FasterApiWeb/leash-secrets",
       "description": "your AI writes fast. leash-secrets makes sure it doesn't run away with your secrets. 71 patterns, 20+ agents.",
       "language": "JavaScript",
-      "highlight": "Maintained OSS — DevSecOps for AI coding agents (npm published)",
+      "highlight": "Maintained OSS \u2014 DevSecOps for AI coding agents (npm published)",
       "npm": "leash-secrets",
       "score": 78.0,
       "scored_at": "2026-07-10T04:15:50.285417+00:00"
@@ -206,32 +284,32 @@
   "learning_journal": {
     "name": "vigilant-lamp",
     "url": "https://github.com/EshwarCVS/vigilant-lamp",
-    "description": "Technical learning journal — notes and experiments from what I'm studying."
+    "description": "Technical learning journal \u2014 notes and experiments from what I'm studying."
   },
   "featured_articles": [
     {
       "title": "Your AI Coder Writes Fast. It Also Writes API Keys Into Source Files.",
       "url": "https://devdine.substack.com/p/your-ai-coder-writes-fast-it-also",
-      "summary": "Open-source skill for Cursor, Claude Code, and Copilot — leash-secrets.",
+      "summary": "Open-source skill for Cursor, Claude Code, and Copilot \u2014 leash-secrets.",
       "published": "Jul 2026"
     }
   ],
   "community": [
     {
       "title": "Free Resume Reviews",
-      "description": "Detailed resume feedback for job seekers — formatting, keywords, and role alignment — at no cost.",
+      "description": "Detailed resume feedback for job seekers \u2014 formatting, keywords, and role alignment \u2014 at no cost.",
       "cta": "Send your resume via [LinkedIn](https://linkedin.com/in/eshwarchandravidhyasagar).",
       "url": "https://www.linkedin.com/posts/eshwarchandravidhyasagar_resumereview-jobsearch-careersupport-activity-7450549822715207680-czvt",
-      "period": "2026 — Present",
-      "icon": "📋"
+      "period": "2026 \u2014 Present",
+      "icon": "\ud83d\udccb"
     },
     {
       "title": "SWE Community & Hiring Advocacy",
       "description": "Curating and amplifying software engineering job opportunities, reposting hiring lists for new grads and senior roles, and engaging with the broader tech community on LinkedIn.",
-      "cta": "Hiring managers and job seekers — reach out on [LinkedIn](https://linkedin.com/in/eshwarchandravidhyasagar).",
+      "cta": "Hiring managers and job seekers \u2014 reach out on [LinkedIn](https://linkedin.com/in/eshwarchandravidhyasagar).",
       "url": "https://linkedin.com/in/eshwarchandravidhyasagar",
       "period": "2025 - Ongoing",
-      "icon": "📣"
+      "icon": "\ud83d\udce3"
     }
   ],
   "interests": [
@@ -239,37 +317,37 @@
       "label": "Technical writing",
       "description": "Software engineering, security & AI tooling",
       "url": "https://devdine.substack.com",
-      "icon": "✍️"
+      "icon": "\u270d\ufe0f"
     },
     {
       "label": "Open source",
       "description": "Developer tools with FasterApiWeb",
       "url": "https://github.com/FasterApiWeb",
-      "icon": "🛠️"
+      "icon": "\ud83d\udee0\ufe0f"
     },
     {
       "label": "Community mentorship",
       "description": "Resume reviews & career support",
       "url": "https://linkedin.com/in/eshwarchandravidhyasagar",
-      "icon": "🤝"
+      "icon": "\ud83e\udd1d"
     },
     {
       "label": "Cooking",
       "description": "Regional recipes & meal prep",
       "url": "https://devdine.substack.com/",
-      "icon": "🍳"
+      "icon": "\ud83c\udf73"
     },
     {
       "label": "Gym & fitness",
       "description": "Strength training & high-protein meals",
       "url": "https://devdine.substack.com/",
-      "icon": "💪"
+      "icon": "\ud83d\udcaa"
     },
     {
       "label": "Reading",
       "description": "Book summaries & takeaways",
       "url": "https://devdine.substack.com",
-      "icon": "📚"
+      "icon": "\ud83d\udcda"
     }
   ]
 }

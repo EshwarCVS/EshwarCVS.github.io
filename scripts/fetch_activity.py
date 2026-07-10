@@ -13,7 +13,7 @@ import sys
 import urllib.request
 import urllib.error
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -58,10 +58,14 @@ def github_graphql(query: str, variables: dict = None) -> dict:
     )
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.loads(resp.read().decode())
+            body = json.loads(resp.read().decode())
     except urllib.error.HTTPError as e:
         print(f"GitHub GraphQL error: {e.code} {e.read().decode()}")
         return {}
+
+    if body.get("errors"):
+        print(f"GitHub GraphQL errors: {json.dumps(body['errors'])[:500]}")
+    return body
 
 
 def github_rest(endpoint: str) -> dict | list:
@@ -80,14 +84,16 @@ def github_rest(endpoint: str) -> dict | list:
 def fetch_github_activity() -> dict:
     """Fetch recent GitHub contributions, PRs, commits, reviews."""
     today = datetime.now(timezone.utc)
-    since = (today - timedelta(days=7)).isoformat()
-    year_start = today.replace(month=1, day=1, hour=0, minute=0, second=0).isoformat()
+    year_start = today.replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0)
+    year_start_iso = year_start.strftime("%Y-%m-%dT%H:%M:%SZ")
+    now_iso = today.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     # Contribution calendar + recent activity via GraphQL
     query = """
-    query($username: String!, $since: DateTime!, $yearStart: DateTime!) {
+    query($username: String!, $yearStart: DateTime!, $now: DateTime!) {
       user(login: $username) {
-        contributionsCollection(from: $yearStart) {
+        avatarUrl
+        contributionsCollection(from: $yearStart, to: $now) {
           totalCommitContributions
           totalPullRequestContributions
           totalPullRequestReviewContributions
@@ -137,11 +143,13 @@ def fetch_github_activity() -> dict:
     """
     variables = {
         "username": GITHUB_USERNAME,
-        "since": since,
-        "yearStart": year_start,
+        "yearStart": year_start_iso,
+        "now": now_iso,
     }
     result = github_graphql(query, variables)
-    user = result.get("data", {}).get("user", {})
+    user = result.get("data", {}).get("user") or {}
+    if not user:
+        print("GitHub GraphQL returned no user payload; stats may be empty")
 
     # Recent events via REST (commits, comments, reviews)
     events = github_rest(f"/users/{GITHUB_USERNAME}/events/public?per_page=30")
@@ -170,8 +178,15 @@ def fetch_github_activity() -> dict:
                 evt["review_state"] = payload.get("review", {}).get("state", "")
             recent_events.append(evt)
 
-    contrib = user.get("contributionsCollection", {})
+    contrib = user.get("contributionsCollection", {}) or {}
+    avatar_url = user.get("avatarUrl") or ""
+    if not avatar_url:
+        rest_user = github_rest(f"/users/{GITHUB_USERNAME}")
+        if isinstance(rest_user, dict):
+            avatar_url = rest_user.get("avatar_url", "")
+
     return {
+        "avatar_url": avatar_url,
         "stats": {
             "total_contributions_ytd": contrib.get("contributionCalendar", {}).get("totalContributions", 0),
             "commits_ytd": contrib.get("totalCommitContributions", 0),
@@ -218,7 +233,16 @@ def fetch_github_activity() -> dict:
 def fetch_substack_posts() -> list[dict]:
     """Fetch latest posts from Substack RSS feed."""
     try:
-        req = urllib.request.Request(SUBSTACK_RSS, headers={"User-Agent": "Mozilla/5.0"})
+        req = urllib.request.Request(
+            SUBSTACK_RSS,
+            headers={
+                "User-Agent": (
+                    "Mozilla/5.0 (compatible; EshwarCVS-portfolio/1.0; "
+                    "+https://eshwarcvs.github.io)"
+                ),
+                "Accept": "application/rss+xml, application/xml, text/xml, */*",
+            },
+        )
         with urllib.request.urlopen(req, timeout=15) as resp:
             xml_data = resp.read().decode()
     except Exception as e:

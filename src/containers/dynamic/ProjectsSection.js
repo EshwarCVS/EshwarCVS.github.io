@@ -23,7 +23,6 @@ export default function ProjectsSection() {
         number="03"
         label="Projects"
         title="Featured work"
-        subtitle="Open source and side projects — scored and ranked from your profile repo."
         terminal="$ git log --author=eshwar --oneline -n 3"
       >
         <div className="project-grid">

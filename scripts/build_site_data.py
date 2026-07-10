@@ -6,8 +6,10 @@ from pathlib import Path
 
 def build_site_data(activity: dict) -> dict:
     linkedin = activity.get("linkedin", {})
-    profile = linkedin.get("profile", {})
+    profile = dict(linkedin.get("profile", {}))
     github = activity.get("github", {})
+    if github.get("avatar_url") and not profile.get("avatar_url"):
+        profile["avatar_url"] = github["avatar_url"]
 
     return {
         "generated_at": activity.get("generated_at"),

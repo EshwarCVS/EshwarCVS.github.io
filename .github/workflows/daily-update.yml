@@ -42,12 +42,14 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Sync profile data from EshwarCVS repo
-        run: python scripts/sync_linkedin.py
+      # Experience/profile content lives in data/linkedin.json in this repo.
+      # Live GitHub + Substack activity is fetched below on each deploy.
 
       - name: Fetch live activity (GitHub, Substack)
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional classic PAT (public_repo / read:user) for accurate contribution stats.
+          # Falls back to the default Actions token.
+          GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN || secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: EshwarCVS
           SUBSTACK_RSS: https://devdine.substack.com/feed
           LINKEDIN_DATA_PATH: data/linkedin.json
@@ -67,7 +69,7 @@ jobs:
 
       - name: Build React site
         env:
-          REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REACT_APP_GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN || secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: EshwarCVS
           USE_GITHUB_DATA: 'true'
         run: npm run build

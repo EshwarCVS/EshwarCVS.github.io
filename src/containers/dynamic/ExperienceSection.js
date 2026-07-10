@@ -4,11 +4,16 @@ import {useSiteData} from "../../contexts/SiteDataContext";
 import SectionShell from "./SectionShell";
 
 const COMPANY_LOGOS = {
+  "Walmart Global Tech": require("../../assets/images/walmartLogo.svg"),
   "United Wholesale Mortgage": require("../../assets/images/uwmLogo.png"),
   Amazon: require("../../assets/images/amazonLogo.png"),
+  "Deloitte India (Offices of the US)": require("../../assets/images/deloitteLogo.png"),
   "Deloitte India": require("../../assets/images/deloitteLogo.png"),
   Deloitte: require("../../assets/images/deloitteLogo.png"),
-  "NC State Dept. of Biological & Agricultural Engineering": require("../../assets/images/ncsuLogo.jpeg")
+  "NC State Department of Biological and Agricultural Engineering": require(
+    "../../assets/images/ncsuLogo.jpeg"
+  ),
+  "North Carolina State University": require("../../assets/images/ncsuLogo.jpeg")
 };
 
 function companyInitials(company) {
@@ -38,14 +43,14 @@ export default function ExperienceSection() {
         number="01"
         label="Experience"
         title="Where I've built"
-        subtitle="Roles across retail data platforms, fintech microservices, and e-commerce at scale."
         terminal="$ cat experience.json | jq '.roles[]'"
       >
         <div className="timeline">
           {experience.map((exp, i) => {
             const logo = companyLogo(exp.company);
+            const highlights = exp.highlights || [];
             return (
-              <article key={`${exp.company}-${i}`} className="timeline-card">
+              <article key={`${exp.company}-${exp.role}-${i}`} className="timeline-card">
                 <div className="timeline-marker">{String(i + 1).padStart(2, "0")}</div>
                 <div className="timeline-content">
                   <div className="timeline-head">
@@ -59,11 +64,25 @@ export default function ExperienceSection() {
                     <div>
                       <h3>{exp.role}</h3>
                       <p className="timeline-company">
-                        {exp.company} · <em>{exp.period}</em>
+                        {exp.company}
+                        {exp.employment_type ? ` · ${exp.employment_type}` : ""}
+                        {" · "}
+                        <em>{exp.period}</em>
                       </p>
+                      {exp.location && (
+                        <p className="timeline-location">{exp.location}</p>
+                      )}
                     </div>
                   </div>
-                  {exp.description && <p className="timeline-desc">{exp.description}</p>}
+                  {highlights.length > 0 ? (
+                    <ul className="timeline-highlights">
+                      {highlights.map(item => (
+                        <li key={item.slice(0, 48)}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    exp.description && <p className="timeline-desc">{exp.description}</p>
+                  )}
                 </div>
               </article>
             );

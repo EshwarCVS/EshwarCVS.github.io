@@ -50,7 +50,6 @@ export default function GitHubSection() {
         number="02"
         label="GitHub"
         title="Open source pulse"
-        subtitle="Live contribution stats — refreshed weekly from GitHub."
         terminal={`$ gh contribution-stats --user ${username} --ytd`}
       >
         <div className="stats-grid">

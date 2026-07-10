@@ -9,6 +9,8 @@
   --text-muted: #a1a1aa;
   --border: rgba(255, 255, 255, 0.08);
   --radius: 16px;
+  --terminal: #86efac;
+  --mesh-secondary: rgba(236, 72, 153, 0.12);
   --font-display: "Syne", "Agustina", sans-serif;
   --font-body: "DM Sans", "Montserrat", sans-serif;
   --font-mono: "JetBrains Mono", "SF Mono", monospace;
@@ -67,10 +69,24 @@
   inset: -20% -10%;
   background:
     radial-gradient(ellipse 60% 50% at 20% 30%, var(--accent-glow), transparent 60%),
-    radial-gradient(ellipse 50% 40% at 80% 70%, rgba(236, 72, 153, 0.12), transparent 55%),
-    radial-gradient(ellipse 40% 30% at 50% 50%, rgba(57, 73, 171, 0.2), transparent 50%);
+    radial-gradient(ellipse 50% 40% at 80% 70%, var(--mesh-secondary), transparent 55%),
+    radial-gradient(ellipse 40% 30% at 50% 50%, var(--accent-soft), transparent 50%);
   pointer-events: none;
   z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-app[data-mode="fun"] .hero-mesh {
+  animation: mesh-drift 12s ease-in-out infinite alternate;
+}
+
+@keyframes mesh-drift {
+  from {
+    transform: scale(1) translate(0, 0);
+  }
+  to {
+    transform: scale(1.08) translate(-2%, 3%);
+  }
 }
 
 .hero-grid {
@@ -96,7 +112,14 @@
   font-weight: 700;
   line-height: 1.05;
   margin: 0 0 0.75rem;
-  background: linear-gradient(135deg, #fff 30%, #a5b4fc);
+  background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.portfolio-app[data-mode="fun"] .hero-name {
+  background: linear-gradient(120deg, #fff7ed 10%, #fb923c 45%, #ec4899 85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -178,8 +201,19 @@
   font-family: var(--font-mono);
   font-size: 0.8rem;
   line-height: 1.7;
-  color: #86efac;
+  color: var(--terminal);
   white-space: pre-wrap;
+}
+
+.portfolio-app[data-mode="fun"] .hero-terminal {
+  transform: rotate(-0.6deg);
+  box-shadow: 0 24px 80px rgba(236, 72, 153, 0.18);
+}
+
+.portfolio-app[data-mode="fun"] .timeline-card:hover,
+.portfolio-app[data-mode="fun"] .project-card:hover,
+.portfolio-app[data-mode="fun"] .writing-card:hover {
+  border-color: rgba(249, 115, 22, 0.55);
 }
 
 .hero-scroll {
@@ -237,7 +271,7 @@
 .terminal-prompt {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: #86efac;
+  color: var(--terminal);
   background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -332,6 +366,28 @@
   margin: 0;
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+.timeline-location {
+  margin: 0.25rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.timeline-highlights {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.timeline-highlights li {
+  margin-bottom: 0.45rem;
+}
+
+.timeline-highlights li:last-child {
+  margin-bottom: 0;
 }
 
 .timeline-desc {
@@ -478,7 +534,7 @@
   margin-top: 0.75rem;
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  color: #86efac;
+  color: var(--terminal);
 }
 
 /* Publications */
@@ -716,6 +772,15 @@
   font-size: 0.8rem;
   color: var(--text-muted);
   line-height: 1.45;
+}
+
+.activity-feed li a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.activity-feed li a:hover {
+  color: var(--accent);
 }
 
 .sync-footer {

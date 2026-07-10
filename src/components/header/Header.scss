@@ -8,16 +8,16 @@
 /* header */
 
 .dark-menu {
-  background-color: $darkBackground !important;
-  color: $textColorDark;
+  background-color: var(--surface-1, #0a0b10) !important;
+  color: var(--text-primary, #f4f4f5);
 }
 
 .dark-menu li a {
-  color: $textColorDark !important;
+  color: var(--text-primary, #f4f4f5) !important;
 }
 
 .dark-menu li a:hover {
-  background-color: $buttonColor !important;
+  background-color: var(--accent-soft, rgba(57, 73, 171, 0.15)) !important;
 }
 
 .header {

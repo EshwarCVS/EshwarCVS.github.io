@@ -19,7 +19,7 @@ const greeting = {
   subTitle: emoji(
     "Software Engineer III at Walmart Global Tech — building data pipelines, GraphQL APIs, and high-throughput systems with Scala, Spark, and Python."
   ),
-  resumeLink: "https://drive.google.com/file/d/1KoSpTt4_62aTJN3Mm1q2bzAqTD2gz8eP/view?usp=sharing",
+  resumeLink: "https://drive.google.com/file/d/1JcWoYKsWfb_m-L4qim3UCRLgsOb-KuhT/view?usp=sharing",
   displayGreeting: true
 };
 
@@ -29,10 +29,7 @@ const socialMediaLinks = {
   github: "https://github.com/EshwarCVS",
   linkedin: "https://www.linkedin.com/in/eshwarchandravidhyasagar/",
   gmail: "thedlaeshwar@gmail.com",
-  stackoverflow: "https://stackoverflow.com/users/9686522/eschvisa",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: true
 };
 
 // Skills Section
