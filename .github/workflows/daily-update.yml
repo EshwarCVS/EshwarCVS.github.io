@@ -50,12 +50,18 @@ jobs:
           # Optional classic PAT (public_repo / read:user) for accurate contribution stats.
           # Falls back to the default Actions token.
           GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN || secrets.GITHUB_TOKEN }}
-          GITHUB_USERNAME: EshwarCVS
-          SUBSTACK_RSS: https://devdine.substack.com/feed
+          GITHUB_USERNAME: ${{ vars.GITHUB_USERNAME || 'EshwarCVS' }}
+          SUBSTACK_RSS: ${{ vars.SUBSTACK_RSS || 'https://devdine.substack.com/feed' }}
           LINKEDIN_DATA_PATH: data/linkedin.json
+          RESUME_URL: ${{ vars.RESUME_URL }}
         run: python scripts/fetch_activity.py
 
       - name: Build site-data.json for React
+        env:
+          # Optional repo Variables (Settings → Secrets and variables → Actions → Variables).
+          # Unset values fall back to data/linkedin.json / script defaults.
+          GITHUB_USERNAME: ${{ vars.GITHUB_USERNAME || 'EshwarCVS' }}
+          RESUME_URL: ${{ vars.RESUME_URL }}
         run: python scripts/build_site_data.py
 
       - name: Set up Node.js
@@ -70,7 +76,7 @@ jobs:
       - name: Build React site
         env:
           REACT_APP_GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN || secrets.GITHUB_TOKEN }}
-          GITHUB_USERNAME: EshwarCVS
+          GITHUB_USERNAME: ${{ vars.GITHUB_USERNAME || 'EshwarCVS' }}
           USE_GITHUB_DATA: 'true'
         run: npm run build
 

@@ -1,6 +1,7 @@
 """Build public/site-data.json for the React portfolio from activity + profile data."""
 
 import json
+import os
 from pathlib import Path
 
 
@@ -10,6 +11,20 @@ def load_json(path: Path) -> dict:
     return json.loads(path.read_text())
 
 
+def resolve_resume_url(profile: dict) -> str:
+    """
+    Resume URL source of truth: RESUME_URL (GitHub Actions Variable / .env).
+    REACT_APP_RESUME_URL is accepted as an alias for local CRA .env convenience —
+    same value, CRA-only prefix. Prefer setting RESUME_URL only.
+    """
+    return (
+        os.getenv("RESUME_URL")
+        or os.getenv("REACT_APP_RESUME_URL")
+        or profile.get("resume")
+        or ""
+    ).strip()
+
+
 def build_site_data(activity: dict, linkedin: dict | None = None) -> dict:
     # Prefer data/linkedin.json so profile edits are never stuck behind a stale activity snapshot
     linkedin = linkedin if linkedin is not None else activity.get("linkedin", {})
@@ -17,6 +32,16 @@ def build_site_data(activity: dict, linkedin: dict | None = None) -> dict:
     github = activity.get("github", {})
     if github.get("avatar_url") and not profile.get("avatar_url"):
         profile["avatar_url"] = github["avatar_url"]
+
+    resume_url = resolve_resume_url(profile)
+    if resume_url:
+        profile["resume"] = resume_url
+    else:
+        profile.pop("resume", None)
+        print(
+            "Warning: no resume URL. Set Actions Variable RESUME_URL "
+            "(or RESUME_URL / REACT_APP_RESUME_URL in .env)."
+        )
 
     return {
         "generated_at": activity.get("generated_at"),

@@ -1,5 +1,4 @@
-import React from "react";
-import {Fade} from "react-reveal";
+import React, {useState} from "react";
 import {useSiteData} from "../../contexts/SiteDataContext";
 import SectionShell from "./SectionShell";
 import walmartLogo from "../../assets/images/walmartLogo.svg";
@@ -36,26 +35,48 @@ function companyLogo(company) {
 export default function ExperienceSection() {
   const {data} = useSiteData();
   const experience = data?.experience || [];
+  // Start collapsed so mobile shows a scannable list of roles first
+  const [openIndex, setOpenIndex] = useState(null);
 
   if (!experience.length) return null;
 
+  const toggle = index => {
+    setOpenIndex(prev => (prev === index ? null : index));
+  };
+
   return (
-    <Fade bottom duration={800} distance="24px">
-      <SectionShell
-        id="experience"
-        number="01"
-        label="Experience"
-        title="Where I've built"
-        terminal="$ cat experience.json | jq '.roles[]'"
-      >
-        <div className="timeline">
-          {experience.map((exp, i) => {
-            const logo = companyLogo(exp.company);
-            const highlights = exp.highlights || [];
-            return (
-              <article key={`${exp.company}-${exp.role}-${i}`} className="timeline-card">
-                <div className="timeline-marker">{String(i + 1).padStart(2, "0")}</div>
-                <div className="timeline-content">
+    <SectionShell
+      id="experience"
+      number="01"
+      label="Experience"
+      title="Where I've built"
+      terminal="$ cat experience.json | jq '.roles[]'"
+    >
+      <div className="timeline">
+        {experience.map((exp, i) => {
+          const logo = companyLogo(exp.company);
+          const highlights = exp.highlights || [];
+          const hasBody = highlights.length > 0 || Boolean(exp.description);
+          const isOpen = openIndex === i;
+          const panelId = `experience-panel-${i}`;
+          const buttonId = `experience-toggle-${i}`;
+
+          return (
+            <article
+              key={`${exp.company}-${exp.role}-${i}`}
+              className={`timeline-card${isOpen ? " is-open" : ""}`}
+            >
+              <div className="timeline-marker">{String(i + 1).padStart(2, "0")}</div>
+              <div className="timeline-content">
+                <button
+                  type="button"
+                  id={buttonId}
+                  className="timeline-toggle"
+                  aria-expanded={isOpen}
+                  aria-controls={hasBody ? panelId : undefined}
+                  onClick={() => hasBody && toggle(i)}
+                  disabled={!hasBody}
+                >
                   <div className="timeline-head">
                     {logo ? (
                       <img src={logo} alt="" className="timeline-logo" />
@@ -64,7 +85,7 @@ export default function ExperienceSection() {
                         {companyInitials(exp.company)}
                       </div>
                     )}
-                    <div>
+                    <div className="timeline-head-text">
                       <h3>{exp.role}</h3>
                       <p className="timeline-company">
                         {exp.company}
@@ -76,22 +97,40 @@ export default function ExperienceSection() {
                         <p className="timeline-location">{exp.location}</p>
                       )}
                     </div>
+                    {hasBody && (
+                      <span className="timeline-chevron" aria-hidden="true">
+                        {isOpen ? "−" : "+"}
+                      </span>
+                    )}
                   </div>
-                  {highlights.length > 0 ? (
-                    <ul className="timeline-highlights">
-                      {highlights.map(item => (
-                        <li key={item.slice(0, 48)}>{item}</li>
-                      ))}
-                    </ul>
-                  ) : (
-                    exp.description && <p className="timeline-desc">{exp.description}</p>
-                  )}
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      </SectionShell>
-    </Fade>
+                </button>
+
+                {hasBody && (
+                  <div
+                    id={panelId}
+                    role="region"
+                    aria-labelledby={buttonId}
+                    className={`timeline-panel${isOpen ? " is-open" : ""}`}
+                    hidden={!isOpen}
+                  >
+                    {highlights.length > 0 ? (
+                      <ul className="timeline-highlights">
+                        {highlights.map(item => (
+                          <li key={item.slice(0, 48)}>{item}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      exp.description && (
+                        <p className="timeline-desc">{exp.description}</p>
+                      )
+                    )}
+                  </div>
+                )}
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </SectionShell>
   );
 }

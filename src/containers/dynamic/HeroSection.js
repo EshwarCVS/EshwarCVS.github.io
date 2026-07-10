@@ -17,7 +17,12 @@ export default function HeroSection() {
   const title = profile.title || "Software Engineer";
   const company = profile.company || "";
   const tagline = profile.tagline || greeting.subTitle;
-  const resumeLink = profile.resume || greeting.resumeLink;
+  // Resume comes from site-data (injected from RESUME_URL at build time).
+  // REACT_APP_RESUME_URL is only a local CRA alias for the same value.
+  const resumeLink =
+    profile.resume ||
+    process.env.REACT_APP_RESUME_URL ||
+    greeting.resumeLink;
   const isFun = mode === "fun";
   const showWalmart = /walmart/i.test(company);
 

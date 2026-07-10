@@ -19,7 +19,7 @@ const greeting = {
   subTitle: emoji(
     "Software Engineer III at Walmart Global Tech — building data pipelines, GraphQL APIs, and high-throughput systems with Scala, Spark, and Python."
   ),
-  resumeLink: "https://drive.google.com/file/d/1JcWoYKsWfb_m-L4qim3UCRLgsOb-KuhT/view?usp=sharing",
+  resumeLink: process.env.REACT_APP_RESUME_URL || "",
   displayGreeting: true
 };
 
