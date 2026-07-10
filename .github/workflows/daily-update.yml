@@ -1,0 +1,80 @@
+name: Deploy Website
+
+on:
+  schedule:
+    # Weekly — Sunday 06:15 UTC
+    - cron: '15 6 * * 0'
+  workflow_dispatch:
+  push:
+    branches: [master]
+
+permissions:
+  contents: write
+
+jobs:
+  secret-scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Scan for leaked secrets
+        uses: FasterApiWeb/leash-secrets/action@leash-secrets-v1.2.1
+        with:
+          scan-mode: all
+          fail-on: critical
+          exclude: build/**,node_modules/**
+
+  deploy:
+    needs: secret-scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Sync profile data from EshwarCVS repo
+        run: python scripts/sync_linkedin.py
+
+      - name: Fetch live activity (GitHub, Substack)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: EshwarCVS
+          SUBSTACK_RSS: https://devdine.substack.com/feed
+          LINKEDIN_DATA_PATH: data/linkedin.json
+        run: python scripts/fetch_activity.py
+
+      - name: Build site-data.json for React
+        run: python scripts/build_site_data.py
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build React site
+        env:
+          REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: EshwarCVS
+          USE_GITHUB_DATA: 'true'
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build
+          clean: true

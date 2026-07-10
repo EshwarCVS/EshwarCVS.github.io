@@ -1,2 +1,9 @@
 .env
 node_modules
+build/
+data/activity.json
+data/last_sync.json
+public/activity.json
+public/site-data.json
+__pycache__/
+*.pyc

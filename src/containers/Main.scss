@@ -1,7 +1,13 @@
 @import "../_globalColor";
 
-.dark-mode {
-  background-color: $darkBackground;
-  color: white;
-  transition: "0.1s";
+.portfolio-app {
+  background-color: #0a0b10;
+  min-height: 100vh;
+}
+
+.portfolio-app.dark-mode,
+.dark-mode.portfolio-app {
+  background-color: #0a0b10;
+  color: #f4f4f5;
+  transition: background-color 0.15s ease;
 }

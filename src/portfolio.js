@@ -3,9 +3,9 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 
 // Splash Screen
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 500 // Set animation duration as per your animation
+  duration: 400
 };
 
 // Summary And Greeting Section
@@ -15,12 +15,12 @@ const illustration = {
 
 const greeting = {
   username: "Eshwar Chandra Vidhyasagar Thedla",
-  title: "Hi all, I'm Eshwar",
+  title: "Hi, I'm Eshwar",
   subTitle: emoji(
-    "a Software Developer II at United Wholesale Mortgage, where I specialize in building scalable microservices and enhancing user experiences for high-traffic applications. I bring expertise in both backend technologies (C#, Java, Kafka, Azure CosmosDB, Redis) and front-end (React, Angular, JSP), crafting solutions that balance performance, reliability, and user engagement"
+    "Software Engineer III at Walmart Global Tech — building data pipelines, GraphQL APIs, and high-throughput systems with Scala, Spark, and Python."
   ),
-  resumeLink: "https://drive.google.com/file/d/1KoSpTt4_62aTJN3Mm1q2bzAqTD2gz8eP/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  resumeLink: "https://drive.google.com/file/d/1KoSpTt4_62aTJN3Mm1q2bzAqTD2gz8eP/view?usp=sharing",
+  displayGreeting: true
 };
 
 // Social Media Links
@@ -91,13 +91,13 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "North Carolina State University",
@@ -143,7 +143,7 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: false, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Software Engineer - 2",
@@ -174,7 +174,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -207,7 +207,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -246,7 +246,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -305,7 +305,7 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
