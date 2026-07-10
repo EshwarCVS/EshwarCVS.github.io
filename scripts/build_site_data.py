@@ -4,8 +4,15 @@ import json
 from pathlib import Path
 
 
-def build_site_data(activity: dict) -> dict:
-    linkedin = activity.get("linkedin", {})
+def load_json(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text())
+
+
+def build_site_data(activity: dict, linkedin: dict | None = None) -> dict:
+    # Prefer data/linkedin.json so profile edits are never stuck behind a stale activity snapshot
+    linkedin = linkedin if linkedin is not None else activity.get("linkedin", {})
     profile = dict(linkedin.get("profile", {}))
     github = activity.get("github", {})
     if github.get("avatar_url") and not profile.get("avatar_url"):
@@ -37,13 +44,16 @@ def build_site_data(activity: dict) -> dict:
 
 if __name__ == "__main__":
     activity_path = Path("data/activity.json")
-    if not activity_path.exists():
-        print("No activity data. Run fetch_activity.py first.")
+    linkedin_path = Path("data/linkedin.json")
+
+    activity = load_json(activity_path)
+    if not activity:
+        print("No activity data. Run fetch_activity.py first (or keep an existing data/activity.json).")
         exit(1)
 
-    activity = json.loads(activity_path.read_text())
-    site_data = build_site_data(activity)
+    linkedin = load_json(linkedin_path) or activity.get("linkedin", {})
+    site_data = build_site_data(activity, linkedin)
     out = Path("public/site-data.json")
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(site_data, indent=2))
-    print(f"Wrote {out}")
+    print(f"Wrote {out} ({len(site_data.get('experience', []))} experience roles)")

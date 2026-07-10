@@ -19,12 +19,19 @@ code {
 html,
 body {
   scroll-behavior: smooth;
-}
-body {
   margin: 0;
+  background-color: var(--surface-1, #f4efe6);
+}
+
+body {
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: var(--surface-1, #f4efe6);
 }
 /* Media Query */
 @media (max-width: 1380px) {

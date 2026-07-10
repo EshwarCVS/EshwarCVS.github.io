@@ -5,10 +5,21 @@
   max-height: 100px;
 }
 
+.headroom {
+  background: transparent !important;
+}
+
+.headroom--pinned,
+.headroom--unpinned,
+.headroom--scrolled {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 /* header */
 
 .dark-menu {
-  background-color: var(--surface-1, #0a0b10) !important;
+  background-color: transparent !important;
   color: var(--text-primary, #f4f4f5);
 }
 
@@ -21,15 +32,17 @@
 }
 
 .header {
-  background-color: var(--header-bg, $lightBackground1);
+  background-color: transparent !important;
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  box-shadow: none !important;
+  border-bottom: none !important;
 }
 
 .formal-header {
-  background-color: var(--header-bg) !important;
-  border-bottom: 1px solid var(--border);
+  background-color: transparent !important;
+  border-bottom: none !important;
 }
 
 .formal-header .logo-name,

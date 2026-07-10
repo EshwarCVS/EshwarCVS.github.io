@@ -1,34 +1,37 @@
 @import "../_globalColor";
 
-.portfolio-app {
-  min-height: 100vh;
-  background-color: var(--surface-1);
-  color: var(--text-primary);
-  transition: background-color 0.25s ease, color 0.25s ease;
+html,
+body,
+#root {
+  min-height: 100%;
+  background-color: var(--surface-1, #f4efe6);
+  color: var(--text-primary, #2c2419);
 }
 
-/* Formal — light, recruiter-friendly */
+/* Formal — cream / beige, recruiter-friendly */
+html[data-mode="formal"],
 .portfolio-app[data-mode="formal"] {
-  --accent: #3949ab;
-  --accent-soft: rgba(57, 73, 171, 0.12);
-  --accent-glow: rgba(57, 73, 171, 0.16);
-  --surface-1: #f7f8fc;
-  --surface-2: #ffffff;
-  --surface-3: #eef0f7;
-  --text-primary: #151821;
-  --text-muted: #5b6172;
-  --border: rgba(21, 24, 33, 0.1);
-  --terminal: #1b7f4e;
-  --mesh-secondary: rgba(99, 102, 241, 0.1);
-  --header-bg: rgba(247, 248, 252, 0.92);
-  --shadow: 0 16px 40px rgba(21, 24, 33, 0.08);
+  --accent: #5c4a32;
+  --accent-soft: rgba(92, 74, 50, 0.1);
+  --accent-glow: rgba(176, 141, 87, 0.18);
+  --surface-1: #f4efe6;
+  --surface-2: #faf6ef;
+  --surface-3: #ebe3d4;
+  --text-primary: #2c2419;
+  --text-muted: #6b5e4e;
+  --border: rgba(44, 36, 25, 0.12);
+  --terminal: #3d6b4f;
+  --mesh-secondary: rgba(176, 141, 87, 0.14);
+  --header-bg: transparent;
+  --shadow: 0 16px 40px rgba(44, 36, 25, 0.08);
 }
 
 /* Fun — dark, expressive */
+html[data-mode="fun"],
 .portfolio-app[data-mode="fun"] {
   --accent: #f97316;
   --accent-soft: rgba(249, 115, 22, 0.18);
-  --accent-glow: rgba(236, 72, 153, 0.35);
+  --accent-glow: rgba(236, 72, 153, 0.22);
   --surface-1: #120b14;
   --surface-2: #1a1020;
   --surface-3: #2a1830;
@@ -36,9 +39,36 @@
   --text-muted: #d6b8c8;
   --border: rgba(255, 180, 120, 0.14);
   --terminal: #fde68a;
-  --mesh-secondary: rgba(56, 189, 248, 0.18);
-  --header-bg: rgba(18, 11, 20, 0.92);
+  --mesh-secondary: rgba(56, 189, 248, 0.12);
+  --header-bg: transparent;
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.portfolio-app {
+  min-height: 100vh;
+  background-color: var(--surface-1);
+  color: var(--text-primary);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* One continuous wash for both modes — no header/hero color seam */
+html[data-mode="formal"],
+.portfolio-app[data-mode="formal"] {
+  background-color: #f4efe6;
+  background-image:
+    radial-gradient(ellipse 90% 55% at 20% 0%, rgba(176, 141, 87, 0.14), transparent 58%),
+    radial-gradient(ellipse 70% 45% at 90% 5%, rgba(214, 184, 140, 0.16), transparent 52%);
+  background-attachment: fixed;
+}
+
+html[data-mode="fun"],
+.portfolio-app[data-mode="fun"] {
+  background-color: #120b14;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 15% 0%, rgba(236, 72, 153, 0.16), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 85% 8%, rgba(249, 115, 22, 0.12), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 50% 35%, rgba(57, 73, 171, 0.1), transparent 55%);
+  background-attachment: fixed;
 }
 
 .mode-toggle-item {

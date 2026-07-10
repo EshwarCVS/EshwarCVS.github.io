@@ -27,6 +27,11 @@ const Main = () => {
 
   const changeMode = next => setMode(next === "fun" ? "fun" : "formal");
 
+  useEffect(() => {
+    document.documentElement.setAttribute("data-mode", mode);
+    document.body.style.backgroundColor = "";
+  }, [mode]);
+
   return (
     <div className={`portfolio-app mode-${mode}`} data-mode={mode}>
       <StyleProvider value={{isDark: mode === "fun", mode, changeMode}}>

@@ -1,16 +1,16 @@
 :root {
-  --accent: #3949ab;
-  --accent-soft: rgba(57, 73, 171, 0.15);
-  --accent-glow: rgba(99, 102, 241, 0.35);
-  --surface-1: #0a0b10;
-  --surface-2: #12141c;
-  --surface-3: #1c1f2b;
-  --text-primary: #f4f4f5;
-  --text-muted: #a1a1aa;
-  --border: rgba(255, 255, 255, 0.08);
+  --accent: #5c4a32;
+  --accent-soft: rgba(92, 74, 50, 0.1);
+  --accent-glow: rgba(176, 141, 87, 0.22);
+  --surface-1: #f4efe6;
+  --surface-2: #faf6ef;
+  --surface-3: #ebe3d4;
+  --text-primary: #2c2419;
+  --text-muted: #6b5e4e;
+  --border: rgba(44, 36, 25, 0.12);
   --radius: 16px;
-  --terminal: #86efac;
-  --mesh-secondary: rgba(236, 72, 153, 0.12);
+  --terminal: #3d6b4f;
+  --mesh-secondary: rgba(176, 141, 87, 0.18);
   --font-display: "Syne", "Agustina", sans-serif;
   --font-body: "DM Sans", "Montserrat", sans-serif;
   --font-mono: "JetBrains Mono", "SF Mono", monospace;
@@ -56,62 +56,37 @@
 /* Hero */
 .hero-section {
   position: relative;
-  min-height: 88vh;
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 6rem 0 3rem;
+  justify-content: flex-start;
+  padding: 4.5rem 0 1.5rem;
   overflow: hidden;
 }
 
 .hero-mesh {
-  position: absolute;
-  inset: -20% -10%;
-  background:
-    radial-gradient(ellipse 60% 50% at 20% 30%, var(--accent-glow), transparent 60%),
-    radial-gradient(ellipse 50% 40% at 80% 70%, var(--mesh-secondary), transparent 55%),
-    radial-gradient(ellipse 40% 30% at 50% 50%, var(--accent-soft), transparent 50%);
-  pointer-events: none;
-  z-index: 0;
-  transition: opacity 0.3s ease;
-}
-
-.portfolio-app[data-mode="formal"] .hero-mesh {
-  opacity: 0.7;
+  display: none;
 }
 
 .portfolio-app[data-mode="formal"] .hero-terminal-body {
-  color: var(--terminal);
-  background: #0f172a;
+  color: #d8c4a0;
+  background: #2c2419;
 }
 
 .portfolio-app[data-mode="formal"] .hero-terminal {
-  background: #0f172a;
-  border-color: rgba(15, 23, 42, 0.2);
+  background: #2c2419;
+  border-color: rgba(44, 36, 25, 0.25);
 }
 
 .portfolio-app[data-mode="formal"] .hero-terminal-bar {
-  background: #1e293b;
-  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background: #3a3024;
+  border-bottom-color: rgba(255, 255, 255, 0.06);
 }
 
 .portfolio-app[data-mode="formal"] .terminal-prompt {
-  color: #0f766e;
-  background: #ecfdf5;
-  border-color: #a7f3d0;
-}
-
-.portfolio-app[data-mode="fun"] .hero-mesh {
-  animation: mesh-drift 12s ease-in-out infinite alternate;
-}
-
-@keyframes mesh-drift {
-  from {
-    transform: scale(1) translate(0, 0);
-  }
-  to {
-    transform: scale(1.08) translate(-2%, 3%);
-  }
+  color: #5c4a32;
+  background: #ebe3d4;
+  border-color: #d4c4a8;
 }
 
 .hero-grid {
@@ -143,7 +118,7 @@
 }
 
 .portfolio-app[data-mode="formal"] .hero-name {
-  color: #151821;
+  color: #2c2419;
 }
 
 .portfolio-app[data-mode="fun"] .hero-name {
@@ -189,7 +164,12 @@
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hero-actions .main-button {
+  margin-top: 0;
+  margin-right: 0;
 }
 
 .hero-resume-link {
@@ -258,10 +238,9 @@
 }
 
 .hero-scroll {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  align-self: center;
+  margin-top: 1.75rem;
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -273,16 +252,16 @@
 @keyframes bob {
   0%,
   100% {
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
   }
   50% {
-    transform: translateX(-50%) translateY(6px);
+    transform: translateY(6px);
   }
 }
 
 /* Sections */
 .dynamic-section {
-  padding: 5rem 0 2rem;
+  padding: 3.5rem 0 1.5rem;
   border-top: 1px solid var(--border);
 }
 
@@ -858,8 +837,8 @@
   }
 
   .hero-section {
-    min-height: auto;
-    padding-top: 5rem;
+    min-height: 0;
+    padding: 3.25rem 0 1.25rem;
   }
 
   .stats-grid {
