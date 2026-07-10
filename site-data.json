@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-10T07:27:28.676887+00:00",
+  "generated_at": "2026-07-10T07:46:20.920406+00:00",
   "github_username": "EshwarCVS",
   "profile": {
-    "name": "Eshwar Chandra Vidhyasagar",
+    "name": "Eshwar Chandra Vidhyasagar Thedla",
     "intro_name": "Eshwar Thedla",
     "title": "Software Engineer III",
     "company": "Walmart Global Tech",
@@ -10,38 +10,116 @@
     "linkedin": "https://linkedin.com/in/eshwarchandravidhyasagar",
     "website": "https://eshwarcvs.github.io",
     "substack": "https://devdine.substack.com",
-    "github_username": "EshwarCVS"
+    "github_username": "EshwarCVS",
+    "full_name": "Eshwar Chandra Vidhyasagar Thedla",
+    "tagline": "Software Engineer III at Walmart Global Tech \u2014 building data pipelines, APIs, and high-throughput systems with Scala, Spark, and Kafka.",
+    "avatar_url": "https://avatars.githubusercontent.com/u/28903840?v=4",
+    "resume": "https://drive.google.com/file/d/1JcWoYKsWfb_m-L4qim3UCRLgsOb-KuhT/view?usp=sharing"
   },
   "experience": [
     {
       "role": "Software Engineer III",
       "company": "Walmart Global Tech",
       "period": "May 2025 - Present",
-      "description": "Designing large-scale data pipelines with Scala and Apache Spark; implemented CDC for real-time data mutations. Built GraphQL APIs for social trends and content moderation; multi-tenancy support in Apache Airflow; high-throughput content ingestion pipelines. Executed 10+ production changes with zero incidents."
+      "employment_type": "Full-time",
+      "location": "Bentonville, Arkansas, United States \u00b7 On-site",
+      "description": "Designing large-scale data pipelines and platform APIs for brand safety, social trends, and content lifecycle at Walmart Global Tech.",
+      "highlights": [
+        "Data Pipeline Engineering & CDC: Designed and maintained large-scale data pipelines using Scala, Apache Spark, and Kafka; implemented a change data capture (CDC) framework for real-time detection and propagation of data mutations across distributed systems \u2014 contributing to a potential research publication",
+        "Brand Safety & Content Lifecycle: Integrated brand safety classification into production data pipelines to ensure content compliance at scale; implemented automated content expiry tracking and time-based retention policies to manage content freshness across the platform",
+        "Social Trends Platform & API Development: Redesigned the end-to-end social trends processing workflow; built RESTful API endpoints for product and content moderation (add, update, soft-delete) enabling cross-team CMS integration; delivered hashtag tracking, CRM endpoints, and trending product APIs powering personalized discovery experiences",
+        "Multi-Tenancy & Content Ingestion: Implemented multi-tenancy support in Apache Airflow for international expansion; built a high-throughput content ingestion pipeline with asynchronous processing, upload state synchronization, and job consolidation",
+        "Production Reliability: Successfully executed 10+ production change requests with zero major incidents; authored comprehensive deployment documentation and established CRQ best practices adopted across the engineering organization",
+        "Engineering Excellence: Introduced mutation testing practices using ScalaTest and ScalaMock; implemented production safeguards including OpenSearch snapshots; maintained thorough documentation for all data workflows",
+        "Developer Enablement & Leadership: Led onboarding sessions on deployment workflows and platform architecture; provided cross-functional support to partner teams and ensured engineering continuity during team absences",
+        "Hackathon: Built a Data Quality Agent during an internal hackathon, demonstrating initiative in automated data validation tooling"
+      ]
     },
     {
       "role": "Software Developer - 2",
       "company": "United Wholesale Mortgage",
       "period": "Feb 2024 - May 2025",
-      "description": "Developed C# microservices for PDF generation (Aspose, CosmosDB, Redis) supporting 1K daily requests. Built Kafka-integrated services handling 1.2M peak requests; integrated ADFS and MSAL for secure document routing. Led test automation with xUnit, Stryker.Net, and Testcontainers."
+      "employment_type": "Full-time",
+      "location": "Pontiac, Michigan, United States \u00b7 On-site",
+      "description": "Built scalable C# microservices for high-volume mortgage document and credit workflows.",
+      "highlights": [
+        "Developed scalable C# microservices for high-volume applications, including a PDF generation service with Aspose, CosmosDB, and Redis (Cache-Aside pattern), supporting 1K daily requests and improving document accuracy in line with MISMO standards",
+        "Designed Kafka-integrated microservices handling 1.2M peak requests, ensuring seamless API compatibility and automated email workflows",
+        "Enhanced security by integrating ADFS for secure document routing and MSAL for token management, optimizing data integrity and client access",
+        "Streamlined credit inquiry processes with Kafka queues, achieving 100% data integrity and reducing costs by 20%",
+        "Led test automation using xUnit, Stryker.Net, and Testcontainers, ensuring code reliability and efficient validation"
+      ]
     },
     {
       "role": "Software Development Engineer",
       "company": "Amazon",
-      "period": "Jun 2022 - Feb 2024",
-      "description": "Enhanced Buy Now checkout with JSP and Java, boosting conversion rates by 25%. Maintained 99% uptime during Prime Day (112K sales/min). Led API migration and EU MFA rollout, reducing unauthorized access by 80%. Resolved 100+ defects and reduced checkout clicks by 20%."
+      "period": "Jan 2023 - Feb 2024",
+      "employment_type": "Full-time",
+      "location": "Cupertino, California, United States \u00b7 Hybrid",
+      "description": "Enhanced Buy Now checkout for millions of customers with reliability and security upgrades.",
+      "highlights": [
+        "Enhanced the \u201cBuy Now\u201d checkout experience with JSP and Java, boosting conversion rates by 25% for millions globally",
+        "Ensured system uptime and reliability during peak traffic, including Prime Day, achieving 99% uptime while managing 112K sales per minute with 12% reduced latency",
+        "Led API migration for checkout and third-party integrations, cutting API-related issues by 30% and enhancing security across the EU with Multi-Factor Authentication, reducing unauthorized access by 80%",
+        "Improved reliability by expanding testing coverage by 30% with Transport Layer Security certification across platforms",
+        "Provided on-call support to resolve over 100 defects, streamlining the checkout process and reducing user clicks by 20%"
+      ]
+    },
+    {
+      "role": "Software Development Engineer",
+      "company": "Amazon",
+      "period": "Jun 2022 - Jan 2023",
+      "employment_type": "Full-time",
+      "location": "Seattle, Washington, United States \u00b7 Hybrid",
+      "description": "Software Development Engineer focused on Spring Framework and Java services.",
+      "highlights": [
+        "Built and maintained Java / Spring Framework services supporting Amazon checkout and related platforms"
+      ]
     },
     {
       "role": "Research Programmer",
-      "company": "NC State Dept. of Biological & Agricultural Engineering",
+      "company": "NC State Department of Biological and Agricultural Engineering",
       "period": "May 2021 - May 2022",
-      "description": "Engineered a Random Forest Regression model in Python for ShellCast, training daily with 350+ weather inputs and achieving 80% accuracy. Deployed a Flask-based web app for real-time harvest closure forecasts serving 20K+ shellfish growers."
+      "employment_type": "Part-time",
+      "location": "Raleigh, North Carolina, United States",
+      "description": "Built ShellCast ML forecasting for 20K+ shellfish growers.",
+      "highlights": [
+        "ML Model Development: Engineered a Random Forest Regression model in Python, training it daily with 350+ inputs from weather services for ShellCast, aiding 20K+ shellfish growers in making informed harvesting decisions",
+        "Optimized the forecasting model, achieving 80% accuracy, and deployed a Flask-based web app for real-time updates"
+      ]
+    },
+    {
+      "role": "Webmaster",
+      "company": "North Carolina State University",
+      "period": "May 2021 - May 2022",
+      "employment_type": "Part-time",
+      "location": "Raleigh, North Carolina, United States \u00b7 On-site",
+      "description": "Managed the Department of Chemical and Biomolecular Engineering website.",
+      "highlights": [
+        "Managed and updated the departmental website using WordPress, ensuring accuracy and usability for professors and students by regularly updating content and resolving web-related issues"
+      ]
     },
     {
       "role": "Software Engineer",
-      "company": "Deloitte India",
+      "company": "Deloitte India (Offices of the US)",
       "period": "Jul 2019 - Dec 2020",
-      "description": "Automated SQL Server data loading with Python, boosting dashboard performance by 97%. Led Quicksight dashboards for 58 countries, reducing manual tax analysis by 98.5%. Automated tax workflows with Alteryx and Python; received SPOT Award."
+      "employment_type": "Full-time",
+      "location": "Hyderabad, Telangana, India \u00b7 Hybrid",
+      "description": "Automated tax data workflows and dashboards for global developer teams.",
+      "highlights": [
+        "Data Handling Automation: Automated SQL Server data loading using Python, reducing manual record handling and boosting dashboard performance by 97%",
+        "Dashboard Development: Led the creation of Quicksight dashboards for 58 country developers, reducing manual tax analysis effort by 98.5%, and delivered user-friendly technology roadmaps",
+        "Workflow Automation: Automated tax calculation workflows with Alteryx and Python, reducing manpower by 80% and received SPOT Award for delivering strategic solutions"
+      ]
+    },
+    {
+      "role": "Intern",
+      "company": "BUILDtheworld",
+      "period": "Apr 2018 - Jul 2018",
+      "employment_type": "Internship",
+      "location": "Hyderabad Area, India",
+      "description": "Internship at BUILDtheworld.",
+      "highlights": []
     }
   ],
   "education": [
@@ -251,14 +329,1091 @@
   ],
   "github": {
     "stats": {
-      "total_contributions_ytd": 0,
-      "commits_ytd": 0,
-      "prs_ytd": 0,
-      "reviews_ytd": 0,
-      "issues_ytd": 0
+      "total_contributions_ytd": 474,
+      "commits_ytd": 279,
+      "prs_ytd": 130,
+      "reviews_ytd": 6,
+      "issues_ytd": 13
     },
-    "contribution_calendar": {},
+    "contribution_calendar": {
+      "totalContributions": 474,
+      "weeks": [
+        {
+          "contributionDays": [
+            {
+              "date": "2026-01-01",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-02",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-03",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-01-04",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-05",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-06",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-07",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-08",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-09",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-10",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-01-11",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-12",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-13",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-14",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-15",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-16",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-17",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-01-18",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-19",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-20",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-21",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-22",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-23",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-24",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-01-25",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-26",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-27",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-28",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-29",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-30",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-01-31",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-02-01",
+              "contributionCount": 3,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-02-02",
+              "contributionCount": 7,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-02-03",
+              "contributionCount": 8,
+              "color": "#40c463"
+            },
+            {
+              "date": "2026-02-04",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-05",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-06",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-07",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-02-08",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-09",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-10",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-11",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-12",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-13",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-14",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-02-15",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-16",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-17",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-18",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-19",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-20",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-21",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-02-22",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-23",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-24",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-25",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-26",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-27",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-02-28",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-03-01",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-02",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-03",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-04",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-05",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-06",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-07",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-03-08",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-09",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-10",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-11",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-12",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-13",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-14",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-03-15",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-16",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-17",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-18",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-19",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-20",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-21",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-03-22",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-23",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-24",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-25",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-26",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-27",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-28",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-03-29",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-30",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-03-31",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-04-01",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-04-02",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-04-03",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-04-04",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-04-05",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-04-06",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-04-07",
+              "contributionCount": 22,
+              "color": "#30a14e"
+            },
+            {
+              "date": "2026-04-08",
+              "contributionCount": 23,
+              "color": "#216e39"
+            },
+            {
+              "date": "2026-04-09",
+              "contributionCount": 29,
+              "color": "#216e39"
+            },
+            {
+              "date": "2026-04-10",
+              "contributionCount": 5,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-04-11",
+              "contributionCount": 36,
+              "color": "#216e39"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-04-12",
+              "contributionCount": 22,
+              "color": "#30a14e"
+            },
+            {
+              "date": "2026-04-13",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-04-14",
+              "contributionCount": 6,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-04-15",
+              "contributionCount": 3,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-04-16",
+              "contributionCount": 13,
+              "color": "#40c463"
+            },
+            {
+              "date": "2026-04-17",
+              "contributionCount": 11,
+              "color": "#40c463"
+            },
+            {
+              "date": "2026-04-18",
+              "contributionCount": 5,
+              "color": "#9be9a8"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-04-19",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-04-20",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-04-21",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-04-22",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-04-23",
+              "contributionCount": 23,
+              "color": "#216e39"
+            },
+            {
+              "date": "2026-04-24",
+              "contributionCount": 38,
+              "color": "#216e39"
+            },
+            {
+              "date": "2026-04-25",
+              "contributionCount": 12,
+              "color": "#40c463"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-04-26",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-04-27",
+              "contributionCount": 12,
+              "color": "#40c463"
+            },
+            {
+              "date": "2026-04-28",
+              "contributionCount": 8,
+              "color": "#40c463"
+            },
+            {
+              "date": "2026-04-29",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-04-30",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-05-01",
+              "contributionCount": 1,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-05-02",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-05-03",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-04",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-05",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-05-06",
+              "contributionCount": 6,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-05-07",
+              "contributionCount": 54,
+              "color": "#216e39"
+            },
+            {
+              "date": "2026-05-08",
+              "contributionCount": 8,
+              "color": "#40c463"
+            },
+            {
+              "date": "2026-05-09",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-05-10",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-11",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-12",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-13",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-14",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-15",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-16",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-05-17",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-18",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-19",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-20",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-21",
+              "contributionCount": 1,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-05-22",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-23",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-05-24",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-25",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-26",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-27",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-28",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-29",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-05-30",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-05-31",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-01",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-02",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-03",
+              "contributionCount": 13,
+              "color": "#40c463"
+            },
+            {
+              "date": "2026-06-04",
+              "contributionCount": 11,
+              "color": "#40c463"
+            },
+            {
+              "date": "2026-06-05",
+              "contributionCount": 4,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-06-06",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-06-07",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-08",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-09",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-10",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-11",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-06-12",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-13",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-06-14",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-15",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-16",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-17",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-18",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-19",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-20",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-06-21",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-22",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-23",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-24",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-25",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-26",
+              "contributionCount": 1,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-06-27",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-06-28",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-29",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-06-30",
+              "contributionCount": 1,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-07-01",
+              "contributionCount": 1,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-07-02",
+              "contributionCount": 5,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-07-03",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            },
+            {
+              "date": "2026-07-04",
+              "contributionCount": 0,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-07-05",
+              "contributionCount": 1,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-07-06",
+              "contributionCount": 3,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-07-07",
+              "contributionCount": 8,
+              "color": "#40c463"
+            },
+            {
+              "date": "2026-07-08",
+              "contributionCount": 30,
+              "color": "#216e39"
+            },
+            {
+              "date": "2026-07-09",
+              "contributionCount": 9,
+              "color": "#40c463"
+            },
+            {
+              "date": "2026-07-10",
+              "contributionCount": 21,
+              "color": "#30a14e"
+            }
+          ]
+        }
+      ]
+    },
     "recent_events": [
+      {
+        "type": "PushEvent",
+        "repo": "EshwarCVS/EshwarCVS.github.io",
+        "created_at": "2026-07-10T07:45:56Z",
+        "commits": []
+      },
       {
         "type": "PushEvent",
         "repo": "EshwarCVS/EshwarCVS.github.io",
@@ -427,16 +1582,172 @@
         "repo": "EshwarCVS/EshwarCVS",
         "created_at": "2026-07-10T04:43:24Z",
         "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/save-gcp-local",
-        "created_at": "2026-07-10T00:44:30Z",
-        "commits": []
       }
     ],
-    "recent_prs": [],
-    "own_repos": []
+    "recent_prs": [
+      {
+        "title": "feat(sarvam): add Sarvam provider support",
+        "url": "https://github.com/567-labs/instructor/pull/2423",
+        "state": "OPEN",
+        "repo": "567-labs/instructor",
+        "updated": "2026-07-09T18:48:34Z"
+      },
+      {
+        "title": "chore(main): release leash-secrets 1.2.1",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/13",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-09T03:55:32Z"
+      },
+      {
+        "title": "fix: prevent Release workflow failures after publish",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/14",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-09T03:55:22Z"
+      },
+      {
+        "title": "fix: stop Release CI failing on org PR policy",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/12",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-09T03:36:09Z"
+      },
+      {
+        "title": "chore(main): release leash-secrets 1.2.0",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/11",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-09T03:02:01Z"
+      },
+      {
+        "title": "feat: publish benchmark corpus and refresh README",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/10",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-09T02:42:38Z"
+      },
+      {
+        "title": "chore: credibility hygiene checks and Used by section",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/9",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-09T01:41:19Z"
+      },
+      {
+        "title": "chore: pre-launch readiness polish and repo cleanup",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/3",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-09T01:28:17Z"
+      },
+      {
+        "title": "Round decimal strings consistently when casting VARCHAR to BIGNUM",
+        "url": "https://github.com/duckdb/duckdb/pull/23689",
+        "state": "MERGED",
+        "repo": "duckdb/duckdb",
+        "updated": "2026-07-08T14:15:47Z"
+      },
+      {
+        "title": "chore: tighten contributor governance and review policy",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/2",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-08T07:08:19Z"
+      }
+    ],
+    "own_repos": [
+      {
+        "name": "EshwarCVS.github.io",
+        "full_name": "EshwarCVS/EshwarCVS.github.io",
+        "url": "https://github.com/EshwarCVS/EshwarCVS.github.io",
+        "description": null,
+        "language": "JavaScript",
+        "stars": 0,
+        "pushed_at": "2026-07-10T07:45:56Z"
+      },
+      {
+        "name": "sglang",
+        "full_name": "EshwarCVS/sglang",
+        "url": "https://github.com/EshwarCVS/sglang",
+        "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
+        "language": "Python",
+        "stars": 1,
+        "pushed_at": "2026-07-10T06:31:23Z"
+      },
+      {
+        "name": "EshwarCVS",
+        "full_name": "EshwarCVS/EshwarCVS",
+        "url": "https://github.com/EshwarCVS/EshwarCVS",
+        "description": "Short description of myself",
+        "language": "Python",
+        "stars": 0,
+        "pushed_at": "2026-07-10T06:28:45Z"
+      },
+      {
+        "name": "save-gcp-local",
+        "full_name": "EshwarCVS/save-gcp-local",
+        "url": "https://github.com/EshwarCVS/save-gcp-local",
+        "description": "Run GCP Dataproc Spark jobs locally in Docker/Podman to save cloud cost \u2014 zero DAG edits.",
+        "language": "Python",
+        "stars": 0,
+        "pushed_at": "2026-07-10T00:44:31Z"
+      },
+      {
+        "name": "instructor",
+        "full_name": "EshwarCVS/instructor",
+        "url": "https://github.com/EshwarCVS/instructor",
+        "description": "structured outputs for llms ",
+        "language": "Python",
+        "stars": 1,
+        "pushed_at": "2026-07-09T18:16:17Z"
+      },
+      {
+        "name": "mem0",
+        "full_name": "EshwarCVS/mem0",
+        "url": "https://github.com/EshwarCVS/mem0",
+        "description": "Universal memory layer for AI Agents",
+        "language": "Python",
+        "stars": 1,
+        "pushed_at": "2026-07-09T04:42:34Z"
+      },
+      {
+        "name": "duckdb",
+        "full_name": "EshwarCVS/duckdb",
+        "url": "https://github.com/EshwarCVS/duckdb",
+        "description": "DuckDB is an analytical in-process SQL database management system",
+        "language": "C++",
+        "stars": 1,
+        "pushed_at": "2026-07-09T04:37:51Z"
+      },
+      {
+        "name": "outlines",
+        "full_name": "EshwarCVS/outlines",
+        "url": "https://github.com/EshwarCVS/outlines",
+        "description": "Structured Outputs",
+        "language": "Python",
+        "stars": 1,
+        "pushed_at": "2026-07-02T14:44:10Z"
+      },
+      {
+        "name": "great_expectations",
+        "full_name": "EshwarCVS/great_expectations",
+        "url": "https://github.com/EshwarCVS/great_expectations",
+        "description": "Always know what to expect from your data.",
+        "language": "Python",
+        "stars": 1,
+        "pushed_at": "2026-06-30T05:34:38Z"
+      },
+      {
+        "name": "vllm",
+        "full_name": "EshwarCVS/vllm",
+        "url": "https://github.com/EshwarCVS/vllm",
+        "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+        "language": "Python",
+        "stars": 0,
+        "pushed_at": "2026-06-26T06:05:17Z"
+      }
+    ]
   },
   "substack": [
     {
