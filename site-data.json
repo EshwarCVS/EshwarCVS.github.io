@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T15:09:23.558699+00:00",
+  "generated_at": "2026-07-12T08:30:15.509332+00:00",
   "github_username": "EshwarCVS",
   "profile": {
     "name": "Eshwar Chandra Vidhyasagar Thedla",
@@ -329,14 +329,14 @@
   ],
   "github": {
     "stats": {
-      "total_contributions_ytd": 481,
-      "commits_ytd": 286,
-      "prs_ytd": 130,
-      "reviews_ytd": 6,
-      "issues_ytd": 13
+      "total_contributions_ytd": 515,
+      "commits_ytd": 311,
+      "prs_ytd": 137,
+      "reviews_ytd": 7,
+      "issues_ytd": 14
     },
     "contribution_calendar": {
-      "totalContributions": 481,
+      "totalContributions": 515,
       "weeks": [
         {
           "contributionDays": [
@@ -528,7 +528,7 @@
             {
               "date": "2026-02-03",
               "contributionCount": 8,
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "date": "2026-02-04",
@@ -879,17 +879,17 @@
             {
               "date": "2026-04-07",
               "contributionCount": 22,
-              "color": "#30a14e"
+              "color": "#40c463"
             },
             {
               "date": "2026-04-08",
               "contributionCount": 23,
-              "color": "#216e39"
+              "color": "#40c463"
             },
             {
               "date": "2026-04-09",
               "contributionCount": 29,
-              "color": "#216e39"
+              "color": "#40c463"
             },
             {
               "date": "2026-04-10",
@@ -899,7 +899,7 @@
             {
               "date": "2026-04-11",
               "contributionCount": 36,
-              "color": "#216e39"
+              "color": "#30a14e"
             }
           ]
         },
@@ -908,7 +908,7 @@
             {
               "date": "2026-04-12",
               "contributionCount": 22,
-              "color": "#30a14e"
+              "color": "#40c463"
             },
             {
               "date": "2026-04-13",
@@ -928,12 +928,12 @@
             {
               "date": "2026-04-16",
               "contributionCount": 13,
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "date": "2026-04-17",
               "contributionCount": 11,
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "date": "2026-04-18",
@@ -967,17 +967,17 @@
             {
               "date": "2026-04-23",
               "contributionCount": 23,
-              "color": "#216e39"
+              "color": "#40c463"
             },
             {
               "date": "2026-04-24",
               "contributionCount": 38,
-              "color": "#216e39"
+              "color": "#30a14e"
             },
             {
               "date": "2026-04-25",
               "contributionCount": 12,
-              "color": "#40c463"
+              "color": "#9be9a8"
             }
           ]
         },
@@ -991,12 +991,12 @@
             {
               "date": "2026-04-27",
               "contributionCount": 12,
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "date": "2026-04-28",
               "contributionCount": 8,
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "date": "2026-04-29",
@@ -1050,7 +1050,7 @@
             {
               "date": "2026-05-08",
               "contributionCount": 8,
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "date": "2026-05-09",
@@ -1196,12 +1196,12 @@
             {
               "date": "2026-06-03",
               "contributionCount": 13,
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "date": "2026-06-04",
               "contributionCount": 11,
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "date": "2026-06-05",
@@ -1386,22 +1386,36 @@
             {
               "date": "2026-07-07",
               "contributionCount": 8,
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "date": "2026-07-08",
               "contributionCount": 30,
-              "color": "#216e39"
-            },
-            {
-              "date": "2026-07-09",
-              "contributionCount": 9,
               "color": "#40c463"
             },
             {
+              "date": "2026-07-09",
+              "contributionCount": 7,
+              "color": "#9be9a8"
+            },
+            {
               "date": "2026-07-10",
-              "contributionCount": 28,
+              "contributionCount": 60,
               "color": "#216e39"
+            },
+            {
+              "date": "2026-07-11",
+              "contributionCount": 3,
+              "color": "#9be9a8"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-07-12",
+              "contributionCount": 1,
+              "color": "#9be9a8"
             }
           ]
         }
@@ -1409,181 +1423,244 @@
     },
     "recent_events": [
       {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/EshwarCVS.github.io",
-        "created_at": "2026-07-10T15:09:01Z",
-        "commits": []
+        "type": "WatchEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-11T18:30:50Z"
       },
       {
         "type": "PushEvent",
-        "repo": "EshwarCVS/EshwarCVS.github.io",
-        "created_at": "2026-07-10T08:11:03Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/EshwarCVS.github.io",
-        "created_at": "2026-07-10T07:53:20Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/EshwarCVS.github.io",
-        "created_at": "2026-07-10T07:45:56Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/EshwarCVS.github.io",
-        "created_at": "2026-07-10T07:27:05Z",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-11T18:30:05Z",
         "commits": []
       },
       {
         "type": "IssuesEvent",
         "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T07:25:39Z"
+        "created_at": "2026-07-11T18:30:05Z"
       },
       {
-        "type": "IssuesEvent",
+        "type": "PullRequestReviewEvent",
         "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T07:25:39Z"
-      },
-      {
-        "type": "IssuesEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T07:25:38Z"
-      },
-      {
-        "type": "IssuesEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T07:22:51Z"
+        "created_at": "2026-07-11T18:29:55Z",
+        "pr_title": "",
+        "review_state": "approved"
       },
       {
         "type": "PushEvent",
-        "repo": "EshwarCVS/sglang",
-        "created_at": "2026-07-10T06:31:24Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/EshwarCVS",
-        "created_at": "2026-07-10T06:27:36Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/EshwarCVS",
-        "created_at": "2026-07-10T06:09:00Z",
+        "repo": "EshwarCVS/duckdb",
+        "created_at": "2026-07-11T05:54:12Z",
         "commits": []
       },
       {
         "type": "DeleteEvent",
-        "repo": "EshwarCVS/EshwarCVS",
-        "created_at": "2026-07-10T06:08:16Z"
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-11T00:37:36Z"
+      },
+      {
+        "type": "DeleteEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-11T00:36:17Z"
+      },
+      {
+        "type": "PullRequestEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-11T00:36:15Z",
+        "title": "",
+        "action": "merged",
+        "url": ""
       },
       {
         "type": "PushEvent",
-        "repo": "EshwarCVS/EshwarCVS",
-        "created_at": "2026-07-10T05:55:09Z",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-11T00:36:16Z",
         "commits": []
       },
       {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/EshwarCVS",
-        "created_at": "2026-07-10T05:52:47Z",
-        "commits": []
-      },
-      {
-        "type": "IssuesEvent",
+        "type": "PullRequestEvent",
         "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T05:50:32Z"
+        "created_at": "2026-07-11T00:35:17Z",
+        "title": "",
+        "action": "opened",
+        "url": ""
       },
       {
-        "type": "IssuesEvent",
+        "type": "CreateEvent",
         "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T05:50:32Z"
+        "created_at": "2026-07-11T00:35:08Z"
       },
       {
-        "type": "IssuesEvent",
+        "type": "DeleteEvent",
         "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T05:50:32Z"
+        "created_at": "2026-07-11T00:10:12Z"
       },
       {
-        "type": "IssueCommentEvent",
+        "type": "PullRequestEvent",
         "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T05:41:58Z",
-        "body_preview": "Thanks for taking this and contributing. Please resolve and re-request the review.",
-        "issue_title": "feat(patterns): add Datadog API and App key detection"
+        "created_at": "2026-07-10T22:41:09Z",
+        "title": "",
+        "action": "closed",
+        "url": ""
       },
       {
-        "type": "IssueCommentEvent",
+        "type": "PullRequestEvent",
         "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T05:41:47Z",
-        "body_preview": "Thanks for taking this and contributing. Please resolve and re-request the review.",
-        "issue_title": "feat(patterns): add Sentry auth token and DSN detection"
-      },
-      {
-        "type": "PushEvent",
-        "repo": "tapheret2/leash-secrets",
-        "created_at": "2026-07-10T05:23:46Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "tapheret2/leash-secrets",
-        "created_at": "2026-07-10T05:23:36Z",
-        "commits": []
+        "created_at": "2026-07-11T00:10:10Z",
+        "title": "",
+        "action": "merged",
+        "url": ""
       },
       {
         "type": "PushEvent",
         "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T05:22:48Z",
-        "commits": []
-      },
-      {
-        "type": "IssuesEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T05:22:48Z"
-      },
-      {
-        "type": "PushEvent",
-        "repo": "tapheret2/leash-secrets",
-        "created_at": "2026-07-10T05:22:01Z",
-        "commits": []
-      },
-      {
-        "type": "PullRequestReviewEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T05:21:56Z",
-        "pr_title": "",
-        "review_state": "approved"
-      },
-      {
-        "type": "PushEvent",
-        "repo": "tapheret2/leash-secrets",
-        "created_at": "2026-07-10T05:20:19Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T05:19:40Z",
+        "created_at": "2026-07-11T00:10:11Z",
         "commits": []
       },
       {
         "type": "IssuesEvent",
         "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T05:19:40Z"
+        "created_at": "2026-07-11T00:10:11Z"
       },
       {
-        "type": "PullRequestReviewEvent",
+        "type": "PullRequestEvent",
         "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T05:19:31Z",
-        "pr_title": "",
-        "review_state": "approved"
+        "created_at": "2026-07-11T00:08:22Z",
+        "title": "",
+        "action": "opened",
+        "url": ""
+      },
+      {
+        "type": "CreateEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-11T00:08:22Z"
+      },
+      {
+        "type": "DeleteEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:47:05Z"
+      },
+      {
+        "type": "DeleteEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:46:20Z"
+      },
+      {
+        "type": "PullRequestEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:46:18Z",
+        "title": "",
+        "action": "merged",
+        "url": ""
+      },
+      {
+        "type": "PushEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:46:19Z",
+        "commits": []
+      },
+      {
+        "type": "PullRequestEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:44:39Z",
+        "title": "",
+        "action": "opened",
+        "url": ""
+      },
+      {
+        "type": "CreateEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:44:37Z"
+      },
+      {
+        "type": "DeleteEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:43:48Z"
+      },
+      {
+        "type": "PushEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:43:47Z",
+        "commits": []
+      },
+      {
+        "type": "PullRequestEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:43:46Z",
+        "title": "",
+        "action": "merged",
+        "url": ""
+      },
+      {
+        "type": "PullRequestEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:42:27Z",
+        "title": "",
+        "action": "opened",
+        "url": ""
+      },
+      {
+        "type": "CreateEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:42:26Z"
+      },
+      {
+        "type": "PullRequestEvent",
+        "repo": "FasterApiWeb/leash-secrets",
+        "created_at": "2026-07-10T23:32:05Z",
+        "title": "",
+        "action": "merged",
+        "url": ""
       }
     ],
     "recent_prs": [
+      {
+        "title": "chore: sync 1.2.2 onto main + CI/CD docs",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/37",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-11T00:36:17Z"
+      },
+      {
+        "title": "feat(patterns): add Sentry auth token and DSN detection",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/36",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-11T00:10:12Z"
+      },
+      {
+        "title": "chore: add Fork Shepherd PR monitor and Release Draft flow",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/31",
+        "state": "CLOSED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-10T23:47:05Z"
+      },
+      {
+        "title": "fix: Release Draft fallback when main push is blocked",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/35",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-10T23:46:20Z"
+      },
+      {
+        "title": "fix: auto-bump in Release Draft; skip npm if already published",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/34",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-10T23:43:48Z"
+      },
+      {
+        "title": "docs: add CI/CD and release reference for maintainers",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/33",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-10T23:32:07Z"
+      },
+      {
+        "title": "chore: add Release Draft CI/CD for leash-secrets",
+        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/32",
+        "state": "MERGED",
+        "repo": "FasterApiWeb/leash-secrets",
+        "updated": "2026-07-10T23:04:51Z"
+      },
       {
         "title": "feat(sarvam): add Sarvam provider support",
         "url": "https://github.com/567-labs/instructor/pull/2423",
@@ -1604,67 +1681,9 @@
         "state": "MERGED",
         "repo": "FasterApiWeb/leash-secrets",
         "updated": "2026-07-09T03:55:22Z"
-      },
-      {
-        "title": "fix: stop Release CI failing on org PR policy",
-        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/12",
-        "state": "MERGED",
-        "repo": "FasterApiWeb/leash-secrets",
-        "updated": "2026-07-09T03:36:09Z"
-      },
-      {
-        "title": "chore(main): release leash-secrets 1.2.0",
-        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/11",
-        "state": "MERGED",
-        "repo": "FasterApiWeb/leash-secrets",
-        "updated": "2026-07-09T03:02:01Z"
-      },
-      {
-        "title": "feat: publish benchmark corpus and refresh README",
-        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/10",
-        "state": "MERGED",
-        "repo": "FasterApiWeb/leash-secrets",
-        "updated": "2026-07-09T02:42:38Z"
-      },
-      {
-        "title": "chore: credibility hygiene checks and Used by section",
-        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/9",
-        "state": "MERGED",
-        "repo": "FasterApiWeb/leash-secrets",
-        "updated": "2026-07-09T01:41:19Z"
-      },
-      {
-        "title": "chore: pre-launch readiness polish and repo cleanup",
-        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/3",
-        "state": "MERGED",
-        "repo": "FasterApiWeb/leash-secrets",
-        "updated": "2026-07-09T01:28:17Z"
-      },
-      {
-        "title": "Round decimal strings consistently when casting VARCHAR to BIGNUM",
-        "url": "https://github.com/duckdb/duckdb/pull/23689",
-        "state": "MERGED",
-        "repo": "duckdb/duckdb",
-        "updated": "2026-07-08T14:15:47Z"
-      },
-      {
-        "title": "chore: tighten contributor governance and review policy",
-        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/2",
-        "state": "MERGED",
-        "repo": "FasterApiWeb/leash-secrets",
-        "updated": "2026-07-08T07:08:19Z"
       }
     ],
     "own_repos": [
-      {
-        "name": "EshwarCVS.github.io",
-        "full_name": "EshwarCVS/EshwarCVS.github.io",
-        "url": "https://github.com/EshwarCVS/EshwarCVS.github.io",
-        "description": null,
-        "language": "JavaScript",
-        "stars": 0,
-        "pushed_at": "2026-07-10T15:09:00Z"
-      },
       {
         "name": "EshwarCVS",
         "full_name": "EshwarCVS/EshwarCVS",
@@ -1672,7 +1691,25 @@
         "description": "Short description of myself",
         "language": "Python",
         "stars": 0,
-        "pushed_at": "2026-07-10T09:37:09Z"
+        "pushed_at": "2026-07-12T08:20:09Z"
+      },
+      {
+        "name": "duckdb",
+        "full_name": "EshwarCVS/duckdb",
+        "url": "https://github.com/EshwarCVS/duckdb",
+        "description": "DuckDB is an analytical in-process SQL database management system",
+        "language": "C++",
+        "stars": 1,
+        "pushed_at": "2026-07-11T05:54:11Z"
+      },
+      {
+        "name": "EshwarCVS.github.io",
+        "full_name": "EshwarCVS/EshwarCVS.github.io",
+        "url": "https://github.com/EshwarCVS/EshwarCVS.github.io",
+        "description": null,
+        "language": "JavaScript",
+        "stars": 1,
+        "pushed_at": "2026-07-10T15:09:55Z"
       },
       {
         "name": "sglang",
@@ -1709,15 +1746,6 @@
         "language": "Python",
         "stars": 1,
         "pushed_at": "2026-07-09T04:42:34Z"
-      },
-      {
-        "name": "duckdb",
-        "full_name": "EshwarCVS/duckdb",
-        "url": "https://github.com/EshwarCVS/duckdb",
-        "description": "DuckDB is an analytical in-process SQL database management system",
-        "language": "C++",
-        "stars": 1,
-        "pushed_at": "2026-07-09T04:37:51Z"
       },
       {
         "name": "outlines",
