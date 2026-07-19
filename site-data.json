@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T08:30:15.509332+00:00",
+  "generated_at": "2026-07-19T08:31:29.236033+00:00",
   "github_username": "EshwarCVS",
   "profile": {
     "name": "Eshwar Chandra Vidhyasagar Thedla",
@@ -329,14 +329,14 @@
   ],
   "github": {
     "stats": {
-      "total_contributions_ytd": 515,
-      "commits_ytd": 311,
-      "prs_ytd": 137,
+      "total_contributions_ytd": 554,
+      "commits_ytd": 344,
+      "prs_ytd": 140,
       "reviews_ytd": 7,
-      "issues_ytd": 14
+      "issues_ytd": 16
     },
     "contribution_calendar": {
-      "totalContributions": 515,
+      "totalContributions": 554,
       "weeks": [
         {
           "contributionDays": [
@@ -1414,6 +1414,45 @@
           "contributionDays": [
             {
               "date": "2026-07-12",
+              "contributionCount": 3,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-07-13",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-07-14",
+              "contributionCount": 3,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-07-15",
+              "contributionCount": 25,
+              "color": "#40c463"
+            },
+            {
+              "date": "2026-07-16",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-07-17",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-07-18",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-07-19",
               "contributionCount": 1,
               "color": "#9be9a8"
             }
@@ -1424,194 +1463,191 @@
     "recent_events": [
       {
         "type": "WatchEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T18:30:50Z"
+        "repo": "nilbuild/developer-roadmap",
+        "created_at": "2026-07-15T18:09:55Z"
       },
       {
         "type": "PushEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T18:30:05Z",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T18:02:05Z",
         "commits": []
+      },
+      {
+        "type": "PushEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T17:48:28Z",
+        "commits": []
+      },
+      {
+        "type": "PushEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T17:48:26Z",
+        "commits": []
+      },
+      {
+        "type": "PushEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T17:38:22Z",
+        "commits": []
+      },
+      {
+        "type": "PushEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T17:35:21Z",
+        "commits": []
+      },
+      {
+        "type": "PushEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:21:45Z",
+        "commits": []
+      },
+      {
+        "type": "PullRequestEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:21:44Z",
+        "title": "",
+        "action": "merged",
+        "url": ""
+      },
+      {
+        "type": "PullRequestEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:21:35Z",
+        "title": "",
+        "action": "opened",
+        "url": ""
       },
       {
         "type": "IssuesEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T18:30:05Z"
-      },
-      {
-        "type": "PullRequestReviewEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T18:29:55Z",
-        "pr_title": "",
-        "review_state": "approved"
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/duckdb",
-        "created_at": "2026-07-11T05:54:12Z",
-        "commits": []
-      },
-      {
-        "type": "DeleteEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:37:36Z"
-      },
-      {
-        "type": "DeleteEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:36:17Z"
-      },
-      {
-        "type": "PullRequestEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:36:15Z",
-        "title": "",
-        "action": "merged",
-        "url": ""
-      },
-      {
-        "type": "PushEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:36:16Z",
-        "commits": []
-      },
-      {
-        "type": "PullRequestEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:35:17Z",
-        "title": "",
-        "action": "opened",
-        "url": ""
-      },
-      {
-        "type": "CreateEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:35:08Z"
-      },
-      {
-        "type": "DeleteEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:10:12Z"
-      },
-      {
-        "type": "PullRequestEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T22:41:09Z",
-        "title": "",
-        "action": "closed",
-        "url": ""
-      },
-      {
-        "type": "PullRequestEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:10:10Z",
-        "title": "",
-        "action": "merged",
-        "url": ""
-      },
-      {
-        "type": "PushEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:10:11Z",
-        "commits": []
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:19:23Z"
       },
       {
         "type": "IssuesEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:10:11Z"
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:19:23Z"
+      },
+      {
+        "type": "PushEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:16:22Z",
+        "commits": []
       },
       {
         "type": "PullRequestEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:08:22Z",
-        "title": "",
-        "action": "opened",
-        "url": ""
-      },
-      {
-        "type": "CreateEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-11T00:08:22Z"
-      },
-      {
-        "type": "DeleteEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:47:05Z"
-      },
-      {
-        "type": "DeleteEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:46:20Z"
-      },
-      {
-        "type": "PullRequestEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:46:18Z",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:08:10Z",
         "title": "",
         "action": "merged",
         "url": ""
       },
       {
         "type": "PushEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:46:19Z",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:08:11Z",
         "commits": []
       },
       {
         "type": "PullRequestEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:44:39Z",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:08:01Z",
         "title": "",
         "action": "opened",
         "url": ""
-      },
-      {
-        "type": "CreateEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:44:37Z"
-      },
-      {
-        "type": "DeleteEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:43:48Z"
       },
       {
         "type": "PushEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:43:47Z",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:07:45Z",
         "commits": []
       },
       {
         "type": "PullRequestEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:43:46Z",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:07:44Z",
         "title": "",
         "action": "merged",
         "url": ""
       },
       {
         "type": "PullRequestEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:42:27Z",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:07:37Z",
         "title": "",
         "action": "opened",
         "url": ""
       },
       {
-        "type": "CreateEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:42:26Z"
+        "type": "PushEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T08:06:34Z",
+        "commits": []
       },
       {
-        "type": "PullRequestEvent",
-        "repo": "FasterApiWeb/leash-secrets",
-        "created_at": "2026-07-10T23:32:05Z",
-        "title": "",
-        "action": "merged",
-        "url": ""
+        "type": "CreateEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T07:29:18Z"
+      },
+      {
+        "type": "PushEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T07:21:33Z",
+        "commits": []
+      },
+      {
+        "type": "PushEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T06:18:24Z",
+        "commits": []
+      },
+      {
+        "type": "CreateEvent",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "created_at": "2026-07-15T03:22:25Z"
+      },
+      {
+        "type": "WatchEvent",
+        "repo": "santifer/career-ops",
+        "created_at": "2026-07-15T02:57:47Z"
       }
     ],
     "recent_prs": [
+      {
+        "title": "[CONTRIB] Update distinct values set Expectations to document observed_value contract",
+        "url": "https://github.com/fivetran/great_expectations/pull/11934",
+        "state": "OPEN",
+        "repo": "fivetran/great_expectations",
+        "updated": "2026-07-16T13:41:56Z"
+      },
+      {
+        "title": "Added new curator",
+        "url": "https://github.com/EshwarCVS/job-hunt-engine/pull/6",
+        "state": "MERGED",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "updated": "2026-07-15T08:21:44Z"
+      },
+      {
+        "title": "Merge pull request #2 from EshwarCVS/master",
+        "url": "https://github.com/EshwarCVS/job-hunt-engine/pull/3",
+        "state": "MERGED",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "updated": "2026-07-15T08:08:10Z"
+      },
+      {
+        "title": "first pr",
+        "url": "https://github.com/EshwarCVS/job-hunt-engine/pull/2",
+        "state": "MERGED",
+        "repo": "EshwarCVS/job-hunt-engine",
+        "updated": "2026-07-15T08:07:45Z"
+      },
+      {
+        "title": "fix(spark): ANSI-aware custom nullability for `make_interval`",
+        "url": "https://github.com/apache/datafusion/pull/22057",
+        "state": "CLOSED",
+        "repo": "apache/datafusion",
+        "updated": "2026-07-15T02:15:07Z"
+      },
       {
         "title": "chore: sync 1.2.2 onto main + CI/CD docs",
         "url": "https://github.com/FasterApiWeb/leash-secrets/pull/37",
@@ -1646,41 +1682,6 @@
         "state": "MERGED",
         "repo": "FasterApiWeb/leash-secrets",
         "updated": "2026-07-10T23:43:48Z"
-      },
-      {
-        "title": "docs: add CI/CD and release reference for maintainers",
-        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/33",
-        "state": "MERGED",
-        "repo": "FasterApiWeb/leash-secrets",
-        "updated": "2026-07-10T23:32:07Z"
-      },
-      {
-        "title": "chore: add Release Draft CI/CD for leash-secrets",
-        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/32",
-        "state": "MERGED",
-        "repo": "FasterApiWeb/leash-secrets",
-        "updated": "2026-07-10T23:04:51Z"
-      },
-      {
-        "title": "feat(sarvam): add Sarvam provider support",
-        "url": "https://github.com/567-labs/instructor/pull/2423",
-        "state": "OPEN",
-        "repo": "567-labs/instructor",
-        "updated": "2026-07-09T18:48:34Z"
-      },
-      {
-        "title": "chore(main): release leash-secrets 1.2.1",
-        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/13",
-        "state": "MERGED",
-        "repo": "FasterApiWeb/leash-secrets",
-        "updated": "2026-07-09T03:55:32Z"
-      },
-      {
-        "title": "fix: prevent Release workflow failures after publish",
-        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/14",
-        "state": "MERGED",
-        "repo": "FasterApiWeb/leash-secrets",
-        "updated": "2026-07-09T03:55:22Z"
       }
     ],
     "own_repos": [
@@ -1691,7 +1692,52 @@
         "description": "Short description of myself",
         "language": "Python",
         "stars": 0,
-        "pushed_at": "2026-07-12T08:20:09Z"
+        "pushed_at": "2026-07-19T08:20:49Z"
+      },
+      {
+        "name": "job-hunt-engine",
+        "full_name": "EshwarCVS/job-hunt-engine",
+        "url": "https://github.com/EshwarCVS/job-hunt-engine",
+        "description": "Open-source tech job board \u2014 internships, new grad & experienced roles. Aggregates SimplifyJobs, jobright-ai, community & curator submissions. Updated daily.",
+        "language": "Python",
+        "stars": 0,
+        "pushed_at": "2026-07-18T10:22:26Z"
+      },
+      {
+        "name": "save-gcp-local",
+        "full_name": "EshwarCVS/save-gcp-local",
+        "url": "https://github.com/EshwarCVS/save-gcp-local",
+        "description": "Run GCP Dataproc Spark jobs locally in Docker/Podman to save cloud cost \u2014 zero DAG edits.",
+        "language": "Python",
+        "stars": 0,
+        "pushed_at": "2026-07-14T14:04:15Z"
+      },
+      {
+        "name": "vigilant-lamp",
+        "full_name": "EshwarCVS/vigilant-lamp",
+        "url": "https://github.com/EshwarCVS/vigilant-lamp",
+        "description": "Learn Little everyday",
+        "language": "",
+        "stars": 0,
+        "pushed_at": "2026-07-13T06:14:20Z"
+      },
+      {
+        "name": "sglang",
+        "full_name": "EshwarCVS/sglang",
+        "url": "https://github.com/EshwarCVS/sglang",
+        "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
+        "language": "Python",
+        "stars": 1,
+        "pushed_at": "2026-07-13T03:24:03Z"
+      },
+      {
+        "name": "EshwarCVS.github.io",
+        "full_name": "EshwarCVS/EshwarCVS.github.io",
+        "url": "https://github.com/EshwarCVS/EshwarCVS.github.io",
+        "description": null,
+        "language": "JavaScript",
+        "stars": 1,
+        "pushed_at": "2026-07-12T08:30:50Z"
       },
       {
         "name": "duckdb",
@@ -1701,33 +1747,6 @@
         "language": "C++",
         "stars": 1,
         "pushed_at": "2026-07-11T05:54:11Z"
-      },
-      {
-        "name": "EshwarCVS.github.io",
-        "full_name": "EshwarCVS/EshwarCVS.github.io",
-        "url": "https://github.com/EshwarCVS/EshwarCVS.github.io",
-        "description": null,
-        "language": "JavaScript",
-        "stars": 1,
-        "pushed_at": "2026-07-10T15:09:55Z"
-      },
-      {
-        "name": "sglang",
-        "full_name": "EshwarCVS/sglang",
-        "url": "https://github.com/EshwarCVS/sglang",
-        "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
-        "language": "Python",
-        "stars": 1,
-        "pushed_at": "2026-07-10T06:31:23Z"
-      },
-      {
-        "name": "save-gcp-local",
-        "full_name": "EshwarCVS/save-gcp-local",
-        "url": "https://github.com/EshwarCVS/save-gcp-local",
-        "description": "Run GCP Dataproc Spark jobs locally in Docker/Podman to save cloud cost \u2014 zero DAG edits.",
-        "language": "Python",
-        "stars": 0,
-        "pushed_at": "2026-07-10T00:44:31Z"
       },
       {
         "name": "instructor",
@@ -1755,24 +1774,6 @@
         "language": "Python",
         "stars": 1,
         "pushed_at": "2026-07-02T14:44:10Z"
-      },
-      {
-        "name": "great_expectations",
-        "full_name": "EshwarCVS/great_expectations",
-        "url": "https://github.com/EshwarCVS/great_expectations",
-        "description": "Always know what to expect from your data.",
-        "language": "Python",
-        "stars": 1,
-        "pushed_at": "2026-06-30T05:34:38Z"
-      },
-      {
-        "name": "vllm",
-        "full_name": "EshwarCVS/vllm",
-        "url": "https://github.com/EshwarCVS/vllm",
-        "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
-        "language": "Python",
-        "stars": 0,
-        "pushed_at": "2026-06-26T06:05:17Z"
       }
     ]
   },
