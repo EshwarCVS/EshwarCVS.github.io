@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T07:13:20.921435+00:00",
+  "generated_at": "2026-08-16T06:56:51.101359+00:00",
   "github_username": "EshwarCVS",
   "profile": {
     "name": "Eshwar Chandra Vidhyasagar Thedla",
@@ -329,14 +329,14 @@
   ],
   "github": {
     "stats": {
-      "total_contributions_ytd": 605,
-      "commits_ytd": 390,
+      "total_contributions_ytd": 620,
+      "commits_ytd": 405,
       "prs_ytd": 141,
       "reviews_ytd": 7,
       "issues_ytd": 16
     },
     "contribution_calendar": {
-      "totalContributions": 605,
+      "totalContributions": 620,
       "weeks": [
         {
           "contributionDays": [
@@ -1570,6 +1570,45 @@
           "contributionDays": [
             {
               "date": "2026-08-09",
+              "contributionCount": 3,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-10",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-11",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-12",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-13",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-14",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-15",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-08-16",
               "contributionCount": 1,
               "color": "#9be9a8"
             }
@@ -1578,6 +1617,26 @@
       ]
     },
     "recent_events": [
+      {
+        "type": "IssueCommentEvent",
+        "repo": "567-labs/instructor",
+        "created_at": "2026-08-12T05:38:04Z",
+        "body_preview": "@jxnl  I will be the maintenance owner for Sarvam \r\nFor other action items, I will push some changes",
+        "issue_title": "feat(sarvam): add Sarvam provider support"
+      },
+      {
+        "type": "IssueCommentEvent",
+        "repo": "567-labs/instructor",
+        "created_at": "2026-08-12T05:37:08Z",
+        "body_preview": "@sujay119 \r\nYes, it lets you use Sarvam's Indic models with Instructor's structured output extractio",
+        "issue_title": "feat(sarvam): add Sarvam provider support"
+      },
+      {
+        "type": "PushEvent",
+        "repo": "EshwarCVS/instructor",
+        "created_at": "2026-08-12T05:25:56Z",
+        "commits": []
+      },
       {
         "type": "WatchEvent",
         "repo": "shashu26/Llm-eval-harness",
@@ -1650,96 +1709,22 @@
         "type": "WatchEvent",
         "repo": "saadpasta/developerFolio",
         "created_at": "2026-07-20T05:08:39Z"
-      },
-      {
-        "type": "WatchEvent",
-        "repo": "nilbuild/developer-roadmap",
-        "created_at": "2026-07-15T18:09:55Z"
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T18:02:05Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T17:48:28Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T17:48:26Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T17:38:22Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T17:35:21Z",
-        "commits": []
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T08:21:45Z",
-        "commits": []
-      },
-      {
-        "type": "PullRequestEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T08:21:44Z",
-        "title": "",
-        "action": "merged",
-        "url": ""
-      },
-      {
-        "type": "PullRequestEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T08:21:35Z",
-        "title": "",
-        "action": "opened",
-        "url": ""
-      },
-      {
-        "type": "IssuesEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T08:19:23Z"
-      },
-      {
-        "type": "IssuesEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T08:19:23Z"
-      },
-      {
-        "type": "PushEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T08:16:22Z",
-        "commits": []
-      },
-      {
-        "type": "PullRequestEvent",
-        "repo": "EshwarCVS/job-hunt-engine",
-        "created_at": "2026-07-15T08:08:10Z",
-        "title": "",
-        "action": "merged",
-        "url": ""
       }
     ],
     "recent_prs": [
+      {
+        "title": "feat(parquet): sub-column projection pushdown for struct fields",
+        "url": "https://github.com/apache/datafusion/pull/22059",
+        "state": "OPEN",
+        "repo": "apache/datafusion",
+        "updated": "2026-08-13T02:14:14Z"
+      },
       {
         "title": "feat(sarvam): add Sarvam provider support",
         "url": "https://github.com/567-labs/instructor/pull/2423",
         "state": "OPEN",
         "repo": "567-labs/instructor",
-        "updated": "2026-08-08T20:12:32Z"
+        "updated": "2026-08-12T05:38:04Z"
       },
       {
         "title": "[CONTRIB] Add configurable connection retry logic for database backends (#11148)",
@@ -1796,13 +1781,6 @@
         "state": "MERGED",
         "repo": "FasterApiWeb/leash-secrets",
         "updated": "2026-07-11T00:10:12Z"
-      },
-      {
-        "title": "chore: add Fork Shepherd PR monitor and Release Draft flow",
-        "url": "https://github.com/FasterApiWeb/leash-secrets/pull/31",
-        "state": "CLOSED",
-        "repo": "FasterApiWeb/leash-secrets",
-        "updated": "2026-07-10T23:47:05Z"
       }
     ],
     "own_repos": [
@@ -1813,7 +1791,7 @@
         "description": "Short description of myself",
         "language": "Python",
         "stars": 0,
-        "pushed_at": "2026-08-09T06:57:34Z"
+        "pushed_at": "2026-08-16T06:40:22Z"
       },
       {
         "name": "job-hunt-engine",
@@ -1822,7 +1800,16 @@
         "description": "Open-source tech job board \u2014 internships, new grad & experienced roles. Aggregates SimplifyJobs, jobright-ai, community & curator submissions. Updated daily.",
         "language": "Python",
         "stars": 0,
-        "pushed_at": "2026-08-08T09:42:48Z"
+        "pushed_at": "2026-08-15T09:30:26Z"
+      },
+      {
+        "name": "instructor",
+        "full_name": "EshwarCVS/instructor",
+        "url": "https://github.com/EshwarCVS/instructor",
+        "description": "structured outputs for llms ",
+        "language": "Python",
+        "stars": 1,
+        "pushed_at": "2026-08-12T05:25:55Z"
       },
       {
         "name": "sglang",
@@ -1831,7 +1818,7 @@
         "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
         "language": "Python",
         "stars": 1,
-        "pushed_at": "2026-08-03T03:22:19Z"
+        "pushed_at": "2026-08-10T02:04:31Z"
       },
       {
         "name": "EshwarCVS.github.io",
@@ -1840,7 +1827,7 @@
         "description": null,
         "language": "JavaScript",
         "stars": 1,
-        "pushed_at": "2026-08-02T08:36:46Z"
+        "pushed_at": "2026-08-09T07:13:59Z"
       },
       {
         "name": "great_expectations",
@@ -1877,15 +1864,6 @@
         "language": "C++",
         "stars": 1,
         "pushed_at": "2026-07-11T05:54:11Z"
-      },
-      {
-        "name": "instructor",
-        "full_name": "EshwarCVS/instructor",
-        "url": "https://github.com/EshwarCVS/instructor",
-        "description": "structured outputs for llms ",
-        "language": "Python",
-        "stars": 1,
-        "pushed_at": "2026-07-09T18:16:17Z"
       },
       {
         "name": "mem0",
