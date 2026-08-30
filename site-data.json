@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T06:58:45.516726+00:00",
+  "generated_at": "2026-08-30T11:51:16.702032+00:00",
   "github_username": "EshwarCVS",
   "profile": {
     "name": "Eshwar Chandra Vidhyasagar Thedla",
@@ -329,14 +329,14 @@
   ],
   "github": {
     "stats": {
-      "total_contributions_ytd": 629,
-      "commits_ytd": 420,
+      "total_contributions_ytd": 644,
+      "commits_ytd": 435,
       "prs_ytd": 141,
       "reviews_ytd": 1,
       "issues_ytd": 16
     },
     "contribution_calendar": {
-      "totalContributions": 629,
+      "totalContributions": 644,
       "weeks": [
         {
           "contributionDays": [
@@ -1648,6 +1648,45 @@
           "contributionDays": [
             {
               "date": "2026-08-23",
+              "contributionCount": 3,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-24",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-25",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-26",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-27",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-28",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            },
+            {
+              "date": "2026-08-29",
+              "contributionCount": 2,
+              "color": "#9be9a8"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-08-30",
               "contributionCount": 1,
               "color": "#9be9a8"
             }
@@ -1690,16 +1729,6 @@
         "repo": "EshwarCVS/instructor",
         "created_at": "2026-08-12T05:25:56Z",
         "commits": []
-      },
-      {
-        "type": "WatchEvent",
-        "repo": "shashu26/Llm-eval-harness",
-        "created_at": "2026-07-26T00:43:00Z"
-      },
-      {
-        "type": "WatchEvent",
-        "repo": "shashu26/shashu26",
-        "created_at": "2026-07-26T00:42:28Z"
       }
     ],
     "recent_prs": [
@@ -1782,7 +1811,7 @@
         "description": "Short description of myself",
         "language": "Python",
         "stars": 0,
-        "pushed_at": "2026-08-23T06:41:06Z"
+        "pushed_at": "2026-08-30T11:25:37Z"
       },
       {
         "name": "job-hunt-engine",
@@ -1791,7 +1820,7 @@
         "description": "Open-source tech job board \u2014 internships, new grad & experienced roles. Aggregates SimplifyJobs, jobright-ai, community & curator submissions. Updated daily.",
         "language": "Python",
         "stars": 0,
-        "pushed_at": "2026-08-22T09:31:29Z"
+        "pushed_at": "2026-08-29T14:16:42Z"
       },
       {
         "name": "sglang",
@@ -1800,7 +1829,7 @@
         "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
         "language": "Python",
         "stars": 1,
-        "pushed_at": "2026-08-17T01:27:51Z"
+        "pushed_at": "2026-08-24T01:35:52Z"
       },
       {
         "name": "EshwarCVS.github.io",
@@ -1808,8 +1837,8 @@
         "url": "https://github.com/EshwarCVS/EshwarCVS.github.io",
         "description": null,
         "language": "JavaScript",
-        "stars": 1,
-        "pushed_at": "2026-08-16T06:57:27Z"
+        "stars": 0,
+        "pushed_at": "2026-08-23T06:59:31Z"
       },
       {
         "name": "instructor",
